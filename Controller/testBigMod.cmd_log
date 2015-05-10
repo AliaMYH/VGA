@@ -83,3 +83,5 @@ xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBig
 ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
 map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
 par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 

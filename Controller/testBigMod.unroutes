@@ -1,9 +1,16 @@
 Release 14.2 - par P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun May 10 17:47:05 2015
+Sun May 10 21:05:08 2015
 
 All signals are completely routed.
 
+WARNING:ParHelpers:362 - There are 4 sourceless signals in this design. This design will not pass the DRC check run by
+   Bitgen.
+
+   bs<0>_OBUF
+   bs<1>_OBUF
+   gs_OBUF
+   rs_OBUF
 
 

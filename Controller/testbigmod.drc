@@ -1,8 +1,21 @@
 Release 14.2 Drc P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun May 10 17:47:35 2015
+Sun May 10 21:05:36 2015
 
 drc -z testBigMod.ncd testBigMod.pcf
 
-DRC detected 0 errors and 0 warnings.
+ERROR:PhysDesignRules:368 - The signal <gs_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <rs_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <bs<0>_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <bs<1>_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <gs_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <rs_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <bs<0>_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <bs<1>_OBUF> is completely unrouted.
+ERROR:Bitgen:25 - DRC detected 8 errors and 0 warnings.  Please see the
+   previously displayed individual error or warning messages for more details.

@@ -30,39 +30,18 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 
 Data Sheet report:
 -----------------
-All values displayed in nanoseconds (ns)
+No constraints were found to generate data for the Data Sheet Report section.
+Use the Advanced Analysis (-a) option or generate global constraints for each
+clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
 
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    0.974|         |         |         |
----------------+---------+---------+---------+---------+
-
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-rst            |b<0>           |   12.211|
-rst            |b<1>           |   12.522|
-rst            |g<0>           |   12.044|
-rst            |g<1>           |   12.314|
-rst            |g<2>           |   12.358|
-rst            |r<0>           |   12.555|
-rst            |r<1>           |   12.017|
-rst            |r<2>           |   12.735|
----------------+---------------+---------+
-
-
-Analysis completed Sun May 10 17:47:24 2015 
+Analysis completed Sun May 10 21:05:24 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 617 MB
+Peak Memory Usage: 612 MB
 
 
 
