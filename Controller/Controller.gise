@@ -249,6 +249,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ColorSelector.ngr"/>
       <outfile xil_pn:name="InterruptManager.ngr"/>
       <outfile xil_pn:name="VController.ngr"/>
@@ -268,50 +270,62 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1431272759" xil_pn:in_ck="7929292949943045536" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5180980225478543937" xil_pn:start_ts="1431272745">
+    <transform xil_pn:end_ts="1431281059" xil_pn:in_ck="7929292949943045536" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5180980225478543937" xil_pn:start_ts="1431281048">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="testBigMod.bld"/>
+      <outfile xil_pn:name="testBigMod.ngd"/>
+      <outfile xil_pn:name="testBigMod_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1431272803" xil_pn:in_ck="6774964989180450116" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-2543691145936091892" xil_pn:start_ts="1431272759">
+    <transform xil_pn:end_ts="1431281085" xil_pn:in_ck="6774964989180450116" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-2543691145936091892" xil_pn:start_ts="1431281059">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="testBigMod.pcf"/>
+      <outfile xil_pn:name="testBigMod_map.map"/>
+      <outfile xil_pn:name="testBigMod_map.mrp"/>
+      <outfile xil_pn:name="testBigMod_map.ncd"/>
+      <outfile xil_pn:name="testBigMod_map.ngm"/>
+      <outfile xil_pn:name="testBigMod_map.xrpt"/>
+      <outfile xil_pn:name="testBigMod_summary.xml"/>
+      <outfile xil_pn:name="testBigMod_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1431281126" xil_pn:in_ck="-7968621729742732388" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1431281085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="testBigMod.ncd"/>
+      <outfile xil_pn:name="testBigMod.pad"/>
+      <outfile xil_pn:name="testBigMod.par"/>
+      <outfile xil_pn:name="testBigMod.ptwx"/>
+      <outfile xil_pn:name="testBigMod.unroutes"/>
+      <outfile xil_pn:name="testBigMod.xpi"/>
+      <outfile xil_pn:name="testBigMod_pad.csv"/>
+      <outfile xil_pn:name="testBigMod_pad.txt"/>
+      <outfile xil_pn:name="testBigMod_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1431281139" xil_pn:in_ck="-7909765254470702059" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="-7544416716831264894" xil_pn:start_ts="1431281126">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="testBigMod.ut"/>
+      <outfile xil_pn:name="testbigmod.bgn"/>
+      <outfile xil_pn:name="testbigmod.bit"/>
+      <outfile xil_pn:name="testbigmod.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1431281126" xil_pn:in_ck="4364385379982064543" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1431281110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1431272845" xil_pn:in_ck="-7968621729742732388" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1431272803">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1431272914" xil_pn:in_ck="-7909765254470702059" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="-7544416716831264894" xil_pn:start_ts="1431272845">
-      <status xil_pn:value="AbortedRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1431272845" xil_pn:in_ck="4364385379982064543" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1431272830">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="testBigMod.twr"/>
+      <outfile xil_pn:name="testBigMod.twx"/>
     </transform>
   </transforms>
 

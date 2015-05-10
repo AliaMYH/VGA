@@ -4,110 +4,30 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="23">
-<DesignStatistics TimeStamp="Sun May 10 21:04:43 2015"><group name="NetStatistics">
-<item name="NumNets_Active" rev="22">
-<attrib name="value" value="971"/></item>
-<item name="NumNets_Gnd" rev="22">
+<DeviceUsageSummary rev="24">
+<DesignStatistics TimeStamp="Sun May 10 21:05:38 2015"><group name="NetStatistics">
+<item name="NumNets_Active" rev="24">
+<attrib name="value" value="18"/></item>
+<item name="NumNets_Gnd" rev="24">
 <attrib name="value" value="1"/></item>
-<item name="NumNets_Vcc" rev="22">
-<attrib name="value" value="1"/></item>
-<item name="NumNodesOfType_Active_BENTQUAD" rev="22">
-<attrib name="value" value="175"/></item>
-<item name="NumNodesOfType_Active_BOUNCEACROSS" rev="22">
-<attrib name="value" value="45"/></item>
-<item name="NumNodesOfType_Active_BOUNCEIN" rev="22">
-<attrib name="value" value="52"/></item>
-<item name="NumNodesOfType_Active_BUFGROUT" rev="22">
-<attrib name="value" value="3"/></item>
-<item name="NumNodesOfType_Active_BUFINP2OUT" rev="22">
-<attrib name="value" value="4"/></item>
-<item name="NumNodesOfType_Active_CLKPIN" rev="22">
-<attrib name="value" value="57"/></item>
-<item name="NumNodesOfType_Active_DOUBLE" rev="22">
-<attrib name="value" value="944"/></item>
-<item name="NumNodesOfType_Active_GENERIC" rev="22">
-<attrib name="value" value="5"/></item>
-<item name="NumNodesOfType_Active_GLOBAL" rev="22">
-<attrib name="value" value="65"/></item>
-<item name="NumNodesOfType_Active_HLONG" rev="22">
-<attrib name="value" value="5"/></item>
-<item name="NumNodesOfType_Active_HQUAD" rev="22">
-<attrib name="value" value="112"/></item>
-<item name="NumNodesOfType_Active_INPUT" rev="22">
-<attrib name="value" value="209"/></item>
-<item name="NumNodesOfType_Active_IOBIN2OUT" rev="22">
-<attrib name="value" value="12"/></item>
-<item name="NumNodesOfType_Active_IOBOUTPUT" rev="22">
-<attrib name="value" value="12"/></item>
-<item name="NumNodesOfType_Active_LUTINPUT" rev="22">
-<attrib name="value" value="1568"/></item>
-<item name="NumNodesOfType_Active_OUTBOUND" rev="22">
-<attrib name="value" value="1589"/></item>
-<item name="NumNodesOfType_Active_OUTPUT" rev="22">
-<attrib name="value" value="971"/></item>
-<item name="NumNodesOfType_Active_PADINPUT" rev="22">
+<item name="NumNodesOfType_Gnd_BOUNCEIN" rev="24">
 <attrib name="value" value="10"/></item>
-<item name="NumNodesOfType_Active_PADOUTPUT" rev="22">
-<attrib name="value" value="2"/></item>
-<item name="NumNodesOfType_Active_PINBOUNCE" rev="22">
-<attrib name="value" value="105"/></item>
-<item name="NumNodesOfType_Active_PINFEED" rev="22">
-<attrib name="value" value="2070"/></item>
-<item name="NumNodesOfType_Active_SINGLE" rev="22">
-<attrib name="value" value="1096"/></item>
-<item name="NumNodesOfType_Active_VLONG" rev="22">
-<attrib name="value" value="5"/></item>
-<item name="NumNodesOfType_Active_VLONG12" rev="22">
-<attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Active_VQUAD" rev="22">
-<attrib name="value" value="110"/></item>
-<item name="NumNodesOfType_Gnd_BOUNCEIN" rev="22">
-<attrib name="value" value="131"/></item>
-<item name="NumNodesOfType_Gnd_CLKPIN" rev="22">
-<attrib name="value" value="21"/></item>
-<item name="NumNodesOfType_Gnd_HVCCGNDOUT" rev="22">
-<attrib name="value" value="64"/></item>
-<item name="NumNodesOfType_Gnd_INPUT" rev="22">
-<attrib name="value" value="1524"/></item>
-<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="22">
-<attrib name="value" value="4"/></item>
-<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="22">
-<attrib name="value" value="4"/></item>
-<item name="NumNodesOfType_Gnd_PADINPUT" rev="22">
-<attrib name="value" value="4"/></item>
-<item name="NumNodesOfType_Gnd_PINBOUNCE" rev="22">
-<attrib name="value" value="54"/></item>
-<item name="NumNodesOfType_Gnd_PINFEED" rev="22">
-<attrib name="value" value="2342"/></item>
-<item name="NumNodesOfType_Vcc_BOUNCEIN" rev="22">
-<attrib name="value" value="13"/></item>
-<item name="NumNodesOfType_Vcc_CLKPIN" rev="22">
-<attrib name="value" value="22"/></item>
-<item name="NumNodesOfType_Vcc_HVCCGNDOUT" rev="22">
-<attrib name="value" value="59"/></item>
-<item name="NumNodesOfType_Vcc_INPUT" rev="22">
-<attrib name="value" value="88"/></item>
-<item name="NumNodesOfType_Vcc_LUTINPUT" rev="22">
-<attrib name="value" value="36"/></item>
-<item name="NumNodesOfType_Vcc_PINBOUNCE" rev="22">
-<attrib name="value" value="14"/></item>
-<item name="NumNodesOfType_Vcc_PINFEED" rev="22">
-<attrib name="value" value="216"/></item>
+<item name="NumNodesOfType_Gnd_HVCCGNDOUT" rev="24">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="24">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="24">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Gnd_PADINPUT" rev="24">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="24">
+<attrib name="value" value="10"/></item>
 </group>
 <group name="SiteStatistics">
-<item name="BUFG-BUFGCTRL" rev="22">
-<attrib name="value" value="3"/></item>
-<item name="IOB33-IOB33M" rev="22">
+<item name="IOB33-IOB33M" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="IOB33-IOB33S" rev="24">
 <attrib name="value" value="8"/></item>
-<item name="IOB33-IOB33S" rev="22">
-<attrib name="value" value="8"/></item>
-<item name="RAMB18E1-FIFO18E1" rev="22">
-<attrib name="value" value="1"/></item>
-<item name="RAMB36E1-RAMBFIFO36E1" rev="22">
-<attrib name="value" value="9"/></item>
-<item name="SLICEL-SLICEM" rev="22">
-<attrib name="value" value="62"/></item>
 </group>
 <group name="MiscellaneousStatistics">
 <item name="AGG_BONDED_IO" rev="23">
@@ -124,6 +44,15 @@
 <attrib name="value" value="2"/></item>
 </group>
 </DesignStatistics>
+<DeviceUsage TimeStamp="Sun May 10 21:05:38 2015"><group name="SiteSummary">
+<item name="IOB33" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
+<item name="IOB33_OUTBUF" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
+<item name="PAD" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
+</group>
+</DeviceUsage>
 <ReportConfigData TimeStamp="Sun May 10 17:48:22 2015"><group name="REG_INIT">
 <item name="CK" rev="22">
 <attrib name="CK" value="26"/><attrib name="CK_INV" value="0"/></item>
@@ -521,10 +450,10 @@
 <attrib name="36" value="9"/></item>
 </group>
 </ReportConfigData>
-<ReportPinData TimeStamp="Sun May 10 17:48:22 2015"><group name="IOB33_OUTBUF">
-<item name="IN" rev="22">
+<ReportPinData TimeStamp="Sun May 10 21:05:38 2015"><group name="IOB33_OUTBUF">
+<item name="IN" rev="24">
 <attrib name="value" value="14"/></item>
-<item name="OUT" rev="22">
+<item name="OUT" rev="24">
 <attrib name="value" value="14"/></item>
 </group>
 <group name="REG_INIT">
@@ -984,8 +913,8 @@
 <attrib name="value" value="2"/></item>
 </group>
 <group name="PAD">
-<item name="PAD" rev="22">
-<attrib name="value" value="16"/></item>
+<item name="PAD" rev="24">
+<attrib name="value" value="14"/></item>
 </group>
 <group name="IOB33_INBUF_EN">
 <item name="OUT" rev="22">
@@ -1132,12 +1061,10 @@
 <attrib name="value" value="287"/></item>
 </group>
 <group name="IOB33">
-<item name="I" rev="22">
-<attrib name="value" value="2"/></item>
-<item name="O" rev="22">
+<item name="O" rev="24">
 <attrib name="value" value="14"/></item>
-<item name="PAD" rev="22">
-<attrib name="value" value="16"/></item>
+<item name="PAD" rev="24">
+<attrib name="value" value="14"/></item>
 </group>
 <group name="SELMUX2_1">
 <item name="0" rev="22">
