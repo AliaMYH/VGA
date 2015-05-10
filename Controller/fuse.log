@@ -1,38 +1,18 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/Documents/Controller/testBig_isim_beh.exe" -prj "Y:/Documents/Controller/testBig_beh.prj" "work.testBig" "work.glbl" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/Desktop/github/DigitalProject2/VGA/Controller/countertest_isim_beh.exe" -prj "Y:/Desktop/github/DigitalProject2/VGA/Controller/countertest_beh.prj" "work.countertest" "work.glbl" 
 ISim P.28xd (signature 0xa0883be4)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "Y:/Documents/Controller/ipcore_dir/testScreen_synth.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/ipcore_dir/testTileset.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/ipcore_dir/testScreen.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/VController.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/InterruptManager.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/ColorSelector.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/testBigMod.v" into library work
-Analyzing Verilog file "Y:/Documents/Controller/testBig.v" into library work
+Analyzing Verilog file "Y:/Desktop/github/DigitalProject2/VGA/Controller/count2bit.v" into library work
+Analyzing Verilog file "Y:/Desktop/github/DigitalProject2/VGA/Controller/countertest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module VController
-Compiling module BLK_MEM_GEN_V7_2_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_2_softecc_output_...
-Compiling module BLK_MEM_GEN_V7_2_mem_module(C_CO...
-Compiling module BLK_MEM_GEN_V7_2(C_FAMILY="spart...
-Compiling module testScreen
-Compiling module InterruptManager
-Compiling module BLK_MEM_GEN_V7_2_output_stage(C_...
-Compiling module BLK_MEM_GEN_V7_2_softecc_output_...
-Compiling module BLK_MEM_GEN_V7_2_mem_module(C_CO...
-Compiling module BLK_MEM_GEN_V7_2(C_FAMILY="spart...
-Compiling module testTileset
-Compiling module ColorSelector
-Compiling module testBigMod
-Compiling module testBig
+Compiling module count2bit
+Compiling module countertest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
-Compiled 16 Verilog Units
-Built simulation executable Y:/Documents/Controller/testBig_isim_beh.exe
-Fuse Memory Usage: 32388 KB
-Fuse CPU Usage: 857 ms
+Compiled 3 Verilog Units
+Built simulation executable Y:/Desktop/github/DigitalProject2/VGA/Controller/countertest_isim_beh.exe
+Fuse Memory Usage: 27268 KB
+Fuse CPU Usage: 468 ms

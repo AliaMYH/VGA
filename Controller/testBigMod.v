@@ -46,14 +46,14 @@ cccc instance_name
     .CLK_OUT1(clk1),     // OUT
     // Status and control signals
     .RESET(rst));  
-wire [9:0] hcount;
-wire [9:0] vcount;
-wire bright;
-wire [3:0] tselect;
-wire clkdiv;
-assign rs= 0;
-assign gs= 0;
-assign bs = 2'b00;
+//wire [9:0] hcount;
+//wire [9:0] vcount;
+//wire bright;
+//wire [3:0] tselect;
+//wire clkdiv;
+//assign rs= 0;
+//assign gs= 0;
+//assign bs = 2'b00;
 
 count2bit hi(clk1, clkdiv);
 

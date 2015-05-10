@@ -10,62 +10,28 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Sun May 10 17:46:00 2015
+Mapped Date    : Sun May 10 21:04:21 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    6
 Slice Logic Utilization:
-  Number of Slice Registers:                    27 out of 126,800    1%
-    Number used as Flip Flops:                  27
-    Number used as Latches:                      0
-    Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        287 out of  63,400    1%
-    Number used as logic:                      286 out of  63,400    1%
-      Number using O6 output only:             250
-      Number using O5 output only:               8
-      Number using O5 and O6:                   28
-      Number used as ROM:                        0
-    Number used as Memory:                       0 out of  19,000    0%
-    Number used exclusively as route-thrus:      1
-      Number with same-slice register load:      0
-      Number with same-slice carry load:         1
-      Number with other load:                    0
+  Number of Slice Registers:                     0 out of 126,800    0%
+  Number of Slice LUTs:                          0 out of  63,400    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   147 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:          288
-    Number with an unused Flip Flop:           261 out of     288   90%
-    Number with an unused LUT:                   1 out of     288    1%
-    Number of fully used LUT-FF pairs:          26 out of     288    9%
-    Number of unique control sets:               5
-    Number of slice register sites lost
-      to control set restrictions:              29 out of 126,800    1%
-
-  A LUT Flip Flop pair for this architecture represents one LUT paired with
-  one Flip Flop within a slice.  A control set is a unique combination of
-  clock, reset, set, and enable signals for a registered element.
-  The Slice Logic Distribution report is not meaningful if the design is
-  over-mapped for a non-slice resource or if Placement fails.
-  OVERMAPPING of BRAM resources should be ignored if the design is
-  over-mapped for a non-BRAM resource or if placement fails.
+  Number of occupied Slices:                     0 out of  15,850    0%
+  Number of LUT Flip Flop pairs used:            0
 
 IO Utilization:
-  Number of bonded IOBs:                        16 out of     210    7%
-    Number of LOCed IOBs:                       16 out of      16  100%
+  Number of bonded IOBs:                        14 out of     210    6%
+    Number of LOCed IOBs:                       14 out of      14  100%
 
 Specific Feature Utilization:
-  Number of RAMB36E1/FIFO36E1s:                  9 out of     135    6%
-    Number using RAMB36E1 only:                  9
-    Number using FIFO36E1 only:                  0
-  Number of RAMB18E1/FIFO18E1s:                  2 out of     270    1%
-    Number using RAMB18E1 only:                  2
-    Number using FIFO18E1 only:                  0
-  Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
-    Number used as BUFGs:                        3
-    Number used as BUFGCTRLs:                    0
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     270    0%
+  Number of BUFG/BUFGCTRLs:                      0 out of      32    0%
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
   Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
@@ -83,7 +49,7 @@ Specific Feature Utilization:
   Number of ICAPs:                               0 out of       2    0%
   Number of IDELAYCTRLs:                         0 out of       6    0%
   Number of IN_FIFOs:                            0 out of      24    0%
-  Number of MMCME2_ADVs:                         1 out of       6   16%
+  Number of MMCME2_ADVs:                         0 out of       6    0%
   Number of OUT_FIFOs:                           0 out of      24    0%
   Number of PCIE_2_1s:                           0 out of       1    0%
   Number of PHASER_REFs:                         0 out of       6    0%
@@ -92,11 +58,9 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.90
-
-Peak Memory Usage:  782 MB
-Total REAL time to MAP completion:  41 secs 
-Total CPU time to MAP completion:   31 secs 
+Peak Memory Usage:  748 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   20 secs 
 
 Table of Contents
 -----------------
@@ -119,11 +83,23 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:MapLib:701 - Signal clk connected to top level port clk has been
+   removed.
+WARNING:MapLib:701 - Signal rst connected to top level port rst has been
+   removed.
+WARNING:PhysDesignRules:368 - The signal <gs_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <rs_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <bs<0>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <bs<1>_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
 
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network inter/screen/douta<319> has no load.
-INFO:LIT:395 - The above info message is repeated 191 more times for the
+INFO:LIT:395 - The above info message is repeated 831 more times for the
    following (max. 5 shown):
    inter/screen/douta<318>,
    inter/screen/douta<317>,
@@ -144,9 +120,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   2 block(s) removed
-   6 block(s) optimized away
- 192 signal(s) removed
+  25 block(s) removed
+   1 block(s) optimized away
+ 844 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -161,6 +137,8 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
+Loadless block "instance_name/clkout1_buf" (CKBUF) removed.
+ The signal "instance_name/clkout0" is loadless and has been removed.
 The signal "inter/screen/douta<319>" is sourceless and has been removed.
 The signal "inter/screen/douta<318>" is sourceless and has been removed.
 The signal "inter/screen/douta<317>" is sourceless and has been removed.
@@ -353,24 +331,717 @@ The signal "inter/screen/douta<131>" is sourceless and has been removed.
 The signal "inter/screen/douta<130>" is sourceless and has been removed.
 The signal "inter/screen/douta<129>" is sourceless and has been removed.
 The signal "inter/screen/douta<128>" is sourceless and has been removed.
+The signal "inter/screen/douta<127>" is sourceless and has been removed.
+The signal "inter/screen/douta<126>" is sourceless and has been removed.
+The signal "inter/screen/douta<125>" is sourceless and has been removed.
+The signal "inter/screen/douta<124>" is sourceless and has been removed.
+The signal "inter/screen/douta<123>" is sourceless and has been removed.
+The signal "inter/screen/douta<122>" is sourceless and has been removed.
+The signal "inter/screen/douta<121>" is sourceless and has been removed.
+The signal "inter/screen/douta<120>" is sourceless and has been removed.
+The signal "inter/screen/douta<119>" is sourceless and has been removed.
+The signal "inter/screen/douta<118>" is sourceless and has been removed.
+The signal "inter/screen/douta<117>" is sourceless and has been removed.
+The signal "inter/screen/douta<116>" is sourceless and has been removed.
+The signal "inter/screen/douta<115>" is sourceless and has been removed.
+The signal "inter/screen/douta<114>" is sourceless and has been removed.
+The signal "inter/screen/douta<113>" is sourceless and has been removed.
+The signal "inter/screen/douta<112>" is sourceless and has been removed.
+The signal "inter/screen/douta<111>" is sourceless and has been removed.
+The signal "inter/screen/douta<110>" is sourceless and has been removed.
+The signal "inter/screen/douta<109>" is sourceless and has been removed.
+The signal "inter/screen/douta<108>" is sourceless and has been removed.
+The signal "inter/screen/douta<107>" is sourceless and has been removed.
+The signal "inter/screen/douta<106>" is sourceless and has been removed.
+The signal "inter/screen/douta<105>" is sourceless and has been removed.
+The signal "inter/screen/douta<104>" is sourceless and has been removed.
+The signal "inter/screen/douta<103>" is sourceless and has been removed.
+The signal "inter/screen/douta<102>" is sourceless and has been removed.
+The signal "inter/screen/douta<101>" is sourceless and has been removed.
+The signal "inter/screen/douta<100>" is sourceless and has been removed.
+The signal "inter/screen/douta<99>" is sourceless and has been removed.
+The signal "inter/screen/douta<98>" is sourceless and has been removed.
+The signal "inter/screen/douta<97>" is sourceless and has been removed.
+The signal "inter/screen/douta<96>" is sourceless and has been removed.
+The signal "inter/screen/douta<95>" is sourceless and has been removed.
+The signal "inter/screen/douta<94>" is sourceless and has been removed.
+The signal "inter/screen/douta<93>" is sourceless and has been removed.
+The signal "inter/screen/douta<92>" is sourceless and has been removed.
+The signal "inter/screen/douta<91>" is sourceless and has been removed.
+The signal "inter/screen/douta<90>" is sourceless and has been removed.
+The signal "inter/screen/douta<89>" is sourceless and has been removed.
+The signal "inter/screen/douta<88>" is sourceless and has been removed.
+The signal "inter/screen/douta<87>" is sourceless and has been removed.
+The signal "inter/screen/douta<86>" is sourceless and has been removed.
+The signal "inter/screen/douta<85>" is sourceless and has been removed.
+The signal "inter/screen/douta<84>" is sourceless and has been removed.
+The signal "inter/screen/douta<83>" is sourceless and has been removed.
+The signal "inter/screen/douta<82>" is sourceless and has been removed.
+The signal "inter/screen/douta<81>" is sourceless and has been removed.
+The signal "inter/screen/douta<80>" is sourceless and has been removed.
+The signal "inter/screen/douta<79>" is sourceless and has been removed.
+The signal "inter/screen/douta<78>" is sourceless and has been removed.
+The signal "inter/screen/douta<77>" is sourceless and has been removed.
+The signal "inter/screen/douta<76>" is sourceless and has been removed.
+The signal "inter/screen/douta<75>" is sourceless and has been removed.
+The signal "inter/screen/douta<74>" is sourceless and has been removed.
+The signal "inter/screen/douta<73>" is sourceless and has been removed.
+The signal "inter/screen/douta<72>" is sourceless and has been removed.
+The signal "inter/screen/douta<71>" is sourceless and has been removed.
+The signal "inter/screen/douta<70>" is sourceless and has been removed.
+The signal "inter/screen/douta<69>" is sourceless and has been removed.
+The signal "inter/screen/douta<68>" is sourceless and has been removed.
+The signal "inter/screen/douta<67>" is sourceless and has been removed.
+The signal "inter/screen/douta<66>" is sourceless and has been removed.
+The signal "inter/screen/douta<65>" is sourceless and has been removed.
+The signal "inter/screen/douta<64>" is sourceless and has been removed.
+The signal "inter/screen/douta<63>" is sourceless and has been removed.
+The signal "inter/screen/douta<62>" is sourceless and has been removed.
+The signal "inter/screen/douta<61>" is sourceless and has been removed.
+The signal "inter/screen/douta<60>" is sourceless and has been removed.
+The signal "inter/screen/douta<59>" is sourceless and has been removed.
+The signal "inter/screen/douta<58>" is sourceless and has been removed.
+The signal "inter/screen/douta<57>" is sourceless and has been removed.
+The signal "inter/screen/douta<56>" is sourceless and has been removed.
+The signal "inter/screen/douta<55>" is sourceless and has been removed.
+The signal "inter/screen/douta<54>" is sourceless and has been removed.
+The signal "inter/screen/douta<53>" is sourceless and has been removed.
+The signal "inter/screen/douta<52>" is sourceless and has been removed.
+The signal "inter/screen/douta<51>" is sourceless and has been removed.
+The signal "inter/screen/douta<50>" is sourceless and has been removed.
+The signal "inter/screen/douta<49>" is sourceless and has been removed.
+The signal "inter/screen/douta<48>" is sourceless and has been removed.
+The signal "inter/screen/douta<47>" is sourceless and has been removed.
+The signal "inter/screen/douta<46>" is sourceless and has been removed.
+The signal "inter/screen/douta<45>" is sourceless and has been removed.
+The signal "inter/screen/douta<44>" is sourceless and has been removed.
+The signal "inter/screen/douta<43>" is sourceless and has been removed.
+The signal "inter/screen/douta<42>" is sourceless and has been removed.
+The signal "inter/screen/douta<41>" is sourceless and has been removed.
+The signal "inter/screen/douta<40>" is sourceless and has been removed.
+The signal "inter/screen/douta<39>" is sourceless and has been removed.
+The signal "inter/screen/douta<38>" is sourceless and has been removed.
+The signal "inter/screen/douta<37>" is sourceless and has been removed.
+The signal "inter/screen/douta<36>" is sourceless and has been removed.
+The signal "inter/screen/douta<35>" is sourceless and has been removed.
+The signal "inter/screen/douta<34>" is sourceless and has been removed.
+The signal "inter/screen/douta<33>" is sourceless and has been removed.
+The signal "inter/screen/douta<32>" is sourceless and has been removed.
+The signal "inter/screen/douta<31>" is sourceless and has been removed.
+The signal "inter/screen/douta<30>" is sourceless and has been removed.
+The signal "inter/screen/douta<29>" is sourceless and has been removed.
+The signal "inter/screen/douta<28>" is sourceless and has been removed.
+The signal "inter/screen/douta<27>" is sourceless and has been removed.
+The signal "inter/screen/douta<26>" is sourceless and has been removed.
+The signal "inter/screen/douta<25>" is sourceless and has been removed.
+The signal "inter/screen/douta<24>" is sourceless and has been removed.
+The signal "inter/screen/douta<23>" is sourceless and has been removed.
+The signal "inter/screen/douta<22>" is sourceless and has been removed.
+The signal "inter/screen/douta<21>" is sourceless and has been removed.
+The signal "inter/screen/douta<20>" is sourceless and has been removed.
+The signal "inter/screen/douta<19>" is sourceless and has been removed.
+The signal "inter/screen/douta<18>" is sourceless and has been removed.
+The signal "inter/screen/douta<17>" is sourceless and has been removed.
+The signal "inter/screen/douta<16>" is sourceless and has been removed.
+The signal "inter/screen/douta<15>" is sourceless and has been removed.
+The signal "inter/screen/douta<14>" is sourceless and has been removed.
+The signal "inter/screen/douta<13>" is sourceless and has been removed.
+The signal "inter/screen/douta<12>" is sourceless and has been removed.
+The signal "inter/screen/douta<11>" is sourceless and has been removed.
+The signal "inter/screen/douta<10>" is sourceless and has been removed.
+The signal "inter/screen/douta<9>" is sourceless and has been removed.
+The signal "inter/screen/douta<8>" is sourceless and has been removed.
+The signal "inter/screen/douta<7>" is sourceless and has been removed.
+The signal "inter/screen/douta<6>" is sourceless and has been removed.
+The signal "inter/screen/douta<5>" is sourceless and has been removed.
+The signal "inter/screen/douta<4>" is sourceless and has been removed.
+The signal "inter/screen/douta<3>" is sourceless and has been removed.
+The signal "inter/screen/douta<2>" is sourceless and has been removed.
+The signal "inter/screen/douta<1>" is sourceless and has been removed.
+The signal "inter/screen/douta<0>" is sourceless and has been removed.
+The signal "inter/screen/N0" is sourceless and has been removed.
+The signal "inter/screen/N1" is sourceless and has been removed.
+The signal "col/tts/douta<511>" is sourceless and has been removed.
+The signal "col/tts/douta<510>" is sourceless and has been removed.
+The signal "col/tts/douta<509>" is sourceless and has been removed.
+The signal "col/tts/douta<508>" is sourceless and has been removed.
+The signal "col/tts/douta<507>" is sourceless and has been removed.
+The signal "col/tts/douta<506>" is sourceless and has been removed.
+The signal "col/tts/douta<505>" is sourceless and has been removed.
+The signal "col/tts/douta<504>" is sourceless and has been removed.
+The signal "col/tts/douta<503>" is sourceless and has been removed.
+The signal "col/tts/douta<502>" is sourceless and has been removed.
+The signal "col/tts/douta<501>" is sourceless and has been removed.
+The signal "col/tts/douta<500>" is sourceless and has been removed.
+The signal "col/tts/douta<499>" is sourceless and has been removed.
+The signal "col/tts/douta<498>" is sourceless and has been removed.
+The signal "col/tts/douta<497>" is sourceless and has been removed.
+The signal "col/tts/douta<496>" is sourceless and has been removed.
+The signal "col/tts/douta<495>" is sourceless and has been removed.
+The signal "col/tts/douta<494>" is sourceless and has been removed.
+The signal "col/tts/douta<493>" is sourceless and has been removed.
+The signal "col/tts/douta<492>" is sourceless and has been removed.
+The signal "col/tts/douta<491>" is sourceless and has been removed.
+The signal "col/tts/douta<490>" is sourceless and has been removed.
+The signal "col/tts/douta<489>" is sourceless and has been removed.
+The signal "col/tts/douta<488>" is sourceless and has been removed.
+The signal "col/tts/douta<487>" is sourceless and has been removed.
+The signal "col/tts/douta<486>" is sourceless and has been removed.
+The signal "col/tts/douta<485>" is sourceless and has been removed.
+The signal "col/tts/douta<484>" is sourceless and has been removed.
+The signal "col/tts/douta<483>" is sourceless and has been removed.
+The signal "col/tts/douta<482>" is sourceless and has been removed.
+The signal "col/tts/douta<481>" is sourceless and has been removed.
+The signal "col/tts/douta<480>" is sourceless and has been removed.
+The signal "col/tts/douta<479>" is sourceless and has been removed.
+The signal "col/tts/douta<478>" is sourceless and has been removed.
+The signal "col/tts/douta<477>" is sourceless and has been removed.
+The signal "col/tts/douta<476>" is sourceless and has been removed.
+The signal "col/tts/douta<475>" is sourceless and has been removed.
+The signal "col/tts/douta<474>" is sourceless and has been removed.
+The signal "col/tts/douta<473>" is sourceless and has been removed.
+The signal "col/tts/douta<472>" is sourceless and has been removed.
+The signal "col/tts/douta<471>" is sourceless and has been removed.
+The signal "col/tts/douta<470>" is sourceless and has been removed.
+The signal "col/tts/douta<469>" is sourceless and has been removed.
+The signal "col/tts/douta<468>" is sourceless and has been removed.
+The signal "col/tts/douta<467>" is sourceless and has been removed.
+The signal "col/tts/douta<466>" is sourceless and has been removed.
+The signal "col/tts/douta<465>" is sourceless and has been removed.
+The signal "col/tts/douta<464>" is sourceless and has been removed.
+The signal "col/tts/douta<463>" is sourceless and has been removed.
+The signal "col/tts/douta<462>" is sourceless and has been removed.
+The signal "col/tts/douta<461>" is sourceless and has been removed.
+The signal "col/tts/douta<460>" is sourceless and has been removed.
+The signal "col/tts/douta<459>" is sourceless and has been removed.
+The signal "col/tts/douta<458>" is sourceless and has been removed.
+The signal "col/tts/douta<457>" is sourceless and has been removed.
+The signal "col/tts/douta<456>" is sourceless and has been removed.
+The signal "col/tts/douta<455>" is sourceless and has been removed.
+The signal "col/tts/douta<454>" is sourceless and has been removed.
+The signal "col/tts/douta<453>" is sourceless and has been removed.
+The signal "col/tts/douta<452>" is sourceless and has been removed.
+The signal "col/tts/douta<451>" is sourceless and has been removed.
+The signal "col/tts/douta<450>" is sourceless and has been removed.
+The signal "col/tts/douta<449>" is sourceless and has been removed.
+The signal "col/tts/douta<448>" is sourceless and has been removed.
+The signal "col/tts/douta<447>" is sourceless and has been removed.
+The signal "col/tts/douta<446>" is sourceless and has been removed.
+The signal "col/tts/douta<445>" is sourceless and has been removed.
+The signal "col/tts/douta<444>" is sourceless and has been removed.
+The signal "col/tts/douta<443>" is sourceless and has been removed.
+The signal "col/tts/douta<442>" is sourceless and has been removed.
+The signal "col/tts/douta<441>" is sourceless and has been removed.
+The signal "col/tts/douta<440>" is sourceless and has been removed.
+The signal "col/tts/douta<439>" is sourceless and has been removed.
+The signal "col/tts/douta<438>" is sourceless and has been removed.
+The signal "col/tts/douta<437>" is sourceless and has been removed.
+The signal "col/tts/douta<436>" is sourceless and has been removed.
+The signal "col/tts/douta<435>" is sourceless and has been removed.
+The signal "col/tts/douta<434>" is sourceless and has been removed.
+The signal "col/tts/douta<433>" is sourceless and has been removed.
+The signal "col/tts/douta<432>" is sourceless and has been removed.
+The signal "col/tts/douta<431>" is sourceless and has been removed.
+The signal "col/tts/douta<430>" is sourceless and has been removed.
+The signal "col/tts/douta<429>" is sourceless and has been removed.
+The signal "col/tts/douta<428>" is sourceless and has been removed.
+The signal "col/tts/douta<427>" is sourceless and has been removed.
+The signal "col/tts/douta<426>" is sourceless and has been removed.
+The signal "col/tts/douta<425>" is sourceless and has been removed.
+The signal "col/tts/douta<424>" is sourceless and has been removed.
+The signal "col/tts/douta<423>" is sourceless and has been removed.
+The signal "col/tts/douta<422>" is sourceless and has been removed.
+The signal "col/tts/douta<421>" is sourceless and has been removed.
+The signal "col/tts/douta<420>" is sourceless and has been removed.
+The signal "col/tts/douta<419>" is sourceless and has been removed.
+The signal "col/tts/douta<418>" is sourceless and has been removed.
+The signal "col/tts/douta<417>" is sourceless and has been removed.
+The signal "col/tts/douta<416>" is sourceless and has been removed.
+The signal "col/tts/douta<415>" is sourceless and has been removed.
+The signal "col/tts/douta<414>" is sourceless and has been removed.
+The signal "col/tts/douta<413>" is sourceless and has been removed.
+The signal "col/tts/douta<412>" is sourceless and has been removed.
+The signal "col/tts/douta<411>" is sourceless and has been removed.
+The signal "col/tts/douta<410>" is sourceless and has been removed.
+The signal "col/tts/douta<409>" is sourceless and has been removed.
+The signal "col/tts/douta<408>" is sourceless and has been removed.
+The signal "col/tts/douta<407>" is sourceless and has been removed.
+The signal "col/tts/douta<406>" is sourceless and has been removed.
+The signal "col/tts/douta<405>" is sourceless and has been removed.
+The signal "col/tts/douta<404>" is sourceless and has been removed.
+The signal "col/tts/douta<403>" is sourceless and has been removed.
+The signal "col/tts/douta<402>" is sourceless and has been removed.
+The signal "col/tts/douta<401>" is sourceless and has been removed.
+The signal "col/tts/douta<400>" is sourceless and has been removed.
+The signal "col/tts/douta<399>" is sourceless and has been removed.
+The signal "col/tts/douta<398>" is sourceless and has been removed.
+The signal "col/tts/douta<397>" is sourceless and has been removed.
+The signal "col/tts/douta<396>" is sourceless and has been removed.
+The signal "col/tts/douta<395>" is sourceless and has been removed.
+The signal "col/tts/douta<394>" is sourceless and has been removed.
+The signal "col/tts/douta<393>" is sourceless and has been removed.
+The signal "col/tts/douta<392>" is sourceless and has been removed.
+The signal "col/tts/douta<391>" is sourceless and has been removed.
+The signal "col/tts/douta<390>" is sourceless and has been removed.
+The signal "col/tts/douta<389>" is sourceless and has been removed.
+The signal "col/tts/douta<388>" is sourceless and has been removed.
+The signal "col/tts/douta<387>" is sourceless and has been removed.
+The signal "col/tts/douta<386>" is sourceless and has been removed.
+The signal "col/tts/douta<385>" is sourceless and has been removed.
+The signal "col/tts/douta<384>" is sourceless and has been removed.
+The signal "col/tts/douta<383>" is sourceless and has been removed.
+The signal "col/tts/douta<382>" is sourceless and has been removed.
+The signal "col/tts/douta<381>" is sourceless and has been removed.
+The signal "col/tts/douta<380>" is sourceless and has been removed.
+The signal "col/tts/douta<379>" is sourceless and has been removed.
+The signal "col/tts/douta<378>" is sourceless and has been removed.
+The signal "col/tts/douta<377>" is sourceless and has been removed.
+The signal "col/tts/douta<376>" is sourceless and has been removed.
+The signal "col/tts/douta<375>" is sourceless and has been removed.
+The signal "col/tts/douta<374>" is sourceless and has been removed.
+The signal "col/tts/douta<373>" is sourceless and has been removed.
+The signal "col/tts/douta<372>" is sourceless and has been removed.
+The signal "col/tts/douta<371>" is sourceless and has been removed.
+The signal "col/tts/douta<370>" is sourceless and has been removed.
+The signal "col/tts/douta<369>" is sourceless and has been removed.
+The signal "col/tts/douta<368>" is sourceless and has been removed.
+The signal "col/tts/douta<367>" is sourceless and has been removed.
+The signal "col/tts/douta<366>" is sourceless and has been removed.
+The signal "col/tts/douta<365>" is sourceless and has been removed.
+The signal "col/tts/douta<364>" is sourceless and has been removed.
+The signal "col/tts/douta<363>" is sourceless and has been removed.
+The signal "col/tts/douta<362>" is sourceless and has been removed.
+The signal "col/tts/douta<361>" is sourceless and has been removed.
+The signal "col/tts/douta<360>" is sourceless and has been removed.
+The signal "col/tts/douta<359>" is sourceless and has been removed.
+The signal "col/tts/douta<358>" is sourceless and has been removed.
+The signal "col/tts/douta<357>" is sourceless and has been removed.
+The signal "col/tts/douta<356>" is sourceless and has been removed.
+The signal "col/tts/douta<355>" is sourceless and has been removed.
+The signal "col/tts/douta<354>" is sourceless and has been removed.
+The signal "col/tts/douta<353>" is sourceless and has been removed.
+The signal "col/tts/douta<352>" is sourceless and has been removed.
+The signal "col/tts/douta<351>" is sourceless and has been removed.
+The signal "col/tts/douta<350>" is sourceless and has been removed.
+The signal "col/tts/douta<349>" is sourceless and has been removed.
+The signal "col/tts/douta<348>" is sourceless and has been removed.
+The signal "col/tts/douta<347>" is sourceless and has been removed.
+The signal "col/tts/douta<346>" is sourceless and has been removed.
+The signal "col/tts/douta<345>" is sourceless and has been removed.
+The signal "col/tts/douta<344>" is sourceless and has been removed.
+The signal "col/tts/douta<343>" is sourceless and has been removed.
+The signal "col/tts/douta<342>" is sourceless and has been removed.
+The signal "col/tts/douta<341>" is sourceless and has been removed.
+The signal "col/tts/douta<340>" is sourceless and has been removed.
+The signal "col/tts/douta<339>" is sourceless and has been removed.
+The signal "col/tts/douta<338>" is sourceless and has been removed.
+The signal "col/tts/douta<337>" is sourceless and has been removed.
+The signal "col/tts/douta<336>" is sourceless and has been removed.
+The signal "col/tts/douta<335>" is sourceless and has been removed.
+The signal "col/tts/douta<334>" is sourceless and has been removed.
+The signal "col/tts/douta<333>" is sourceless and has been removed.
+The signal "col/tts/douta<332>" is sourceless and has been removed.
+The signal "col/tts/douta<331>" is sourceless and has been removed.
+The signal "col/tts/douta<330>" is sourceless and has been removed.
+The signal "col/tts/douta<329>" is sourceless and has been removed.
+The signal "col/tts/douta<328>" is sourceless and has been removed.
+The signal "col/tts/douta<327>" is sourceless and has been removed.
+The signal "col/tts/douta<326>" is sourceless and has been removed.
+The signal "col/tts/douta<325>" is sourceless and has been removed.
+The signal "col/tts/douta<324>" is sourceless and has been removed.
+The signal "col/tts/douta<323>" is sourceless and has been removed.
+The signal "col/tts/douta<322>" is sourceless and has been removed.
+The signal "col/tts/douta<321>" is sourceless and has been removed.
+The signal "col/tts/douta<320>" is sourceless and has been removed.
+The signal "col/tts/douta<319>" is sourceless and has been removed.
+The signal "col/tts/douta<318>" is sourceless and has been removed.
+The signal "col/tts/douta<317>" is sourceless and has been removed.
+The signal "col/tts/douta<316>" is sourceless and has been removed.
+The signal "col/tts/douta<315>" is sourceless and has been removed.
+The signal "col/tts/douta<314>" is sourceless and has been removed.
+The signal "col/tts/douta<313>" is sourceless and has been removed.
+The signal "col/tts/douta<312>" is sourceless and has been removed.
+The signal "col/tts/douta<311>" is sourceless and has been removed.
+The signal "col/tts/douta<310>" is sourceless and has been removed.
+The signal "col/tts/douta<309>" is sourceless and has been removed.
+The signal "col/tts/douta<308>" is sourceless and has been removed.
+The signal "col/tts/douta<307>" is sourceless and has been removed.
+The signal "col/tts/douta<306>" is sourceless and has been removed.
+The signal "col/tts/douta<305>" is sourceless and has been removed.
+The signal "col/tts/douta<304>" is sourceless and has been removed.
+The signal "col/tts/douta<303>" is sourceless and has been removed.
+The signal "col/tts/douta<302>" is sourceless and has been removed.
+The signal "col/tts/douta<301>" is sourceless and has been removed.
+The signal "col/tts/douta<300>" is sourceless and has been removed.
+The signal "col/tts/douta<299>" is sourceless and has been removed.
+The signal "col/tts/douta<298>" is sourceless and has been removed.
+The signal "col/tts/douta<297>" is sourceless and has been removed.
+The signal "col/tts/douta<296>" is sourceless and has been removed.
+The signal "col/tts/douta<295>" is sourceless and has been removed.
+The signal "col/tts/douta<294>" is sourceless and has been removed.
+The signal "col/tts/douta<293>" is sourceless and has been removed.
+The signal "col/tts/douta<292>" is sourceless and has been removed.
+The signal "col/tts/douta<291>" is sourceless and has been removed.
+The signal "col/tts/douta<290>" is sourceless and has been removed.
+The signal "col/tts/douta<289>" is sourceless and has been removed.
+The signal "col/tts/douta<288>" is sourceless and has been removed.
+The signal "col/tts/douta<287>" is sourceless and has been removed.
+The signal "col/tts/douta<286>" is sourceless and has been removed.
+The signal "col/tts/douta<285>" is sourceless and has been removed.
+The signal "col/tts/douta<284>" is sourceless and has been removed.
+The signal "col/tts/douta<283>" is sourceless and has been removed.
+The signal "col/tts/douta<282>" is sourceless and has been removed.
+The signal "col/tts/douta<281>" is sourceless and has been removed.
+The signal "col/tts/douta<280>" is sourceless and has been removed.
+The signal "col/tts/douta<279>" is sourceless and has been removed.
+The signal "col/tts/douta<278>" is sourceless and has been removed.
+The signal "col/tts/douta<277>" is sourceless and has been removed.
+The signal "col/tts/douta<276>" is sourceless and has been removed.
+The signal "col/tts/douta<275>" is sourceless and has been removed.
+The signal "col/tts/douta<274>" is sourceless and has been removed.
+The signal "col/tts/douta<273>" is sourceless and has been removed.
+The signal "col/tts/douta<272>" is sourceless and has been removed.
+The signal "col/tts/douta<271>" is sourceless and has been removed.
+The signal "col/tts/douta<270>" is sourceless and has been removed.
+The signal "col/tts/douta<269>" is sourceless and has been removed.
+The signal "col/tts/douta<268>" is sourceless and has been removed.
+The signal "col/tts/douta<267>" is sourceless and has been removed.
+The signal "col/tts/douta<266>" is sourceless and has been removed.
+The signal "col/tts/douta<265>" is sourceless and has been removed.
+The signal "col/tts/douta<264>" is sourceless and has been removed.
+The signal "col/tts/douta<263>" is sourceless and has been removed.
+The signal "col/tts/douta<262>" is sourceless and has been removed.
+The signal "col/tts/douta<261>" is sourceless and has been removed.
+The signal "col/tts/douta<260>" is sourceless and has been removed.
+The signal "col/tts/douta<259>" is sourceless and has been removed.
+The signal "col/tts/douta<258>" is sourceless and has been removed.
+The signal "col/tts/douta<257>" is sourceless and has been removed.
+The signal "col/tts/douta<256>" is sourceless and has been removed.
+The signal "col/tts/douta<255>" is sourceless and has been removed.
+The signal "col/tts/douta<254>" is sourceless and has been removed.
+The signal "col/tts/douta<253>" is sourceless and has been removed.
+The signal "col/tts/douta<252>" is sourceless and has been removed.
+The signal "col/tts/douta<251>" is sourceless and has been removed.
+The signal "col/tts/douta<250>" is sourceless and has been removed.
+The signal "col/tts/douta<249>" is sourceless and has been removed.
+The signal "col/tts/douta<248>" is sourceless and has been removed.
+The signal "col/tts/douta<247>" is sourceless and has been removed.
+The signal "col/tts/douta<246>" is sourceless and has been removed.
+The signal "col/tts/douta<245>" is sourceless and has been removed.
+The signal "col/tts/douta<244>" is sourceless and has been removed.
+The signal "col/tts/douta<243>" is sourceless and has been removed.
+The signal "col/tts/douta<242>" is sourceless and has been removed.
+The signal "col/tts/douta<241>" is sourceless and has been removed.
+The signal "col/tts/douta<240>" is sourceless and has been removed.
+The signal "col/tts/douta<239>" is sourceless and has been removed.
+The signal "col/tts/douta<238>" is sourceless and has been removed.
+The signal "col/tts/douta<237>" is sourceless and has been removed.
+The signal "col/tts/douta<236>" is sourceless and has been removed.
+The signal "col/tts/douta<235>" is sourceless and has been removed.
+The signal "col/tts/douta<234>" is sourceless and has been removed.
+The signal "col/tts/douta<233>" is sourceless and has been removed.
+The signal "col/tts/douta<232>" is sourceless and has been removed.
+The signal "col/tts/douta<231>" is sourceless and has been removed.
+The signal "col/tts/douta<230>" is sourceless and has been removed.
+The signal "col/tts/douta<229>" is sourceless and has been removed.
+The signal "col/tts/douta<228>" is sourceless and has been removed.
+The signal "col/tts/douta<227>" is sourceless and has been removed.
+The signal "col/tts/douta<226>" is sourceless and has been removed.
+The signal "col/tts/douta<225>" is sourceless and has been removed.
+The signal "col/tts/douta<224>" is sourceless and has been removed.
+The signal "col/tts/douta<223>" is sourceless and has been removed.
+The signal "col/tts/douta<222>" is sourceless and has been removed.
+The signal "col/tts/douta<221>" is sourceless and has been removed.
+The signal "col/tts/douta<220>" is sourceless and has been removed.
+The signal "col/tts/douta<219>" is sourceless and has been removed.
+The signal "col/tts/douta<218>" is sourceless and has been removed.
+The signal "col/tts/douta<217>" is sourceless and has been removed.
+The signal "col/tts/douta<216>" is sourceless and has been removed.
+The signal "col/tts/douta<215>" is sourceless and has been removed.
+The signal "col/tts/douta<214>" is sourceless and has been removed.
+The signal "col/tts/douta<213>" is sourceless and has been removed.
+The signal "col/tts/douta<212>" is sourceless and has been removed.
+The signal "col/tts/douta<211>" is sourceless and has been removed.
+The signal "col/tts/douta<210>" is sourceless and has been removed.
+The signal "col/tts/douta<209>" is sourceless and has been removed.
+The signal "col/tts/douta<208>" is sourceless and has been removed.
+The signal "col/tts/douta<207>" is sourceless and has been removed.
+The signal "col/tts/douta<206>" is sourceless and has been removed.
+The signal "col/tts/douta<205>" is sourceless and has been removed.
+The signal "col/tts/douta<204>" is sourceless and has been removed.
+The signal "col/tts/douta<203>" is sourceless and has been removed.
+The signal "col/tts/douta<202>" is sourceless and has been removed.
+The signal "col/tts/douta<201>" is sourceless and has been removed.
+The signal "col/tts/douta<200>" is sourceless and has been removed.
+The signal "col/tts/douta<199>" is sourceless and has been removed.
+The signal "col/tts/douta<198>" is sourceless and has been removed.
+The signal "col/tts/douta<197>" is sourceless and has been removed.
+The signal "col/tts/douta<196>" is sourceless and has been removed.
+The signal "col/tts/douta<195>" is sourceless and has been removed.
+The signal "col/tts/douta<194>" is sourceless and has been removed.
+The signal "col/tts/douta<193>" is sourceless and has been removed.
+The signal "col/tts/douta<192>" is sourceless and has been removed.
+The signal "col/tts/douta<191>" is sourceless and has been removed.
+The signal "col/tts/douta<190>" is sourceless and has been removed.
+The signal "col/tts/douta<189>" is sourceless and has been removed.
+The signal "col/tts/douta<188>" is sourceless and has been removed.
+The signal "col/tts/douta<187>" is sourceless and has been removed.
+The signal "col/tts/douta<186>" is sourceless and has been removed.
+The signal "col/tts/douta<185>" is sourceless and has been removed.
+The signal "col/tts/douta<184>" is sourceless and has been removed.
+The signal "col/tts/douta<183>" is sourceless and has been removed.
+The signal "col/tts/douta<182>" is sourceless and has been removed.
+The signal "col/tts/douta<181>" is sourceless and has been removed.
+The signal "col/tts/douta<180>" is sourceless and has been removed.
+The signal "col/tts/douta<179>" is sourceless and has been removed.
+The signal "col/tts/douta<178>" is sourceless and has been removed.
+The signal "col/tts/douta<177>" is sourceless and has been removed.
+The signal "col/tts/douta<176>" is sourceless and has been removed.
+The signal "col/tts/douta<175>" is sourceless and has been removed.
+The signal "col/tts/douta<174>" is sourceless and has been removed.
+The signal "col/tts/douta<173>" is sourceless and has been removed.
+The signal "col/tts/douta<172>" is sourceless and has been removed.
+The signal "col/tts/douta<171>" is sourceless and has been removed.
+The signal "col/tts/douta<170>" is sourceless and has been removed.
+The signal "col/tts/douta<169>" is sourceless and has been removed.
+The signal "col/tts/douta<168>" is sourceless and has been removed.
+The signal "col/tts/douta<167>" is sourceless and has been removed.
+The signal "col/tts/douta<166>" is sourceless and has been removed.
+The signal "col/tts/douta<165>" is sourceless and has been removed.
+The signal "col/tts/douta<164>" is sourceless and has been removed.
+The signal "col/tts/douta<163>" is sourceless and has been removed.
+The signal "col/tts/douta<162>" is sourceless and has been removed.
+The signal "col/tts/douta<161>" is sourceless and has been removed.
+The signal "col/tts/douta<160>" is sourceless and has been removed.
+The signal "col/tts/douta<159>" is sourceless and has been removed.
+The signal "col/tts/douta<158>" is sourceless and has been removed.
+The signal "col/tts/douta<157>" is sourceless and has been removed.
+The signal "col/tts/douta<156>" is sourceless and has been removed.
+The signal "col/tts/douta<155>" is sourceless and has been removed.
+The signal "col/tts/douta<154>" is sourceless and has been removed.
+The signal "col/tts/douta<153>" is sourceless and has been removed.
+The signal "col/tts/douta<152>" is sourceless and has been removed.
+The signal "col/tts/douta<151>" is sourceless and has been removed.
+The signal "col/tts/douta<150>" is sourceless and has been removed.
+The signal "col/tts/douta<149>" is sourceless and has been removed.
+The signal "col/tts/douta<148>" is sourceless and has been removed.
+The signal "col/tts/douta<147>" is sourceless and has been removed.
+The signal "col/tts/douta<146>" is sourceless and has been removed.
+The signal "col/tts/douta<145>" is sourceless and has been removed.
+The signal "col/tts/douta<144>" is sourceless and has been removed.
+The signal "col/tts/douta<143>" is sourceless and has been removed.
+The signal "col/tts/douta<142>" is sourceless and has been removed.
+The signal "col/tts/douta<141>" is sourceless and has been removed.
+The signal "col/tts/douta<140>" is sourceless and has been removed.
+The signal "col/tts/douta<139>" is sourceless and has been removed.
+The signal "col/tts/douta<138>" is sourceless and has been removed.
+The signal "col/tts/douta<137>" is sourceless and has been removed.
+The signal "col/tts/douta<136>" is sourceless and has been removed.
+The signal "col/tts/douta<135>" is sourceless and has been removed.
+The signal "col/tts/douta<134>" is sourceless and has been removed.
+The signal "col/tts/douta<133>" is sourceless and has been removed.
+The signal "col/tts/douta<132>" is sourceless and has been removed.
+The signal "col/tts/douta<131>" is sourceless and has been removed.
+The signal "col/tts/douta<130>" is sourceless and has been removed.
+The signal "col/tts/douta<129>" is sourceless and has been removed.
+The signal "col/tts/douta<128>" is sourceless and has been removed.
+The signal "col/tts/douta<127>" is sourceless and has been removed.
+The signal "col/tts/douta<126>" is sourceless and has been removed.
+The signal "col/tts/douta<125>" is sourceless and has been removed.
+The signal "col/tts/douta<124>" is sourceless and has been removed.
+The signal "col/tts/douta<123>" is sourceless and has been removed.
+The signal "col/tts/douta<122>" is sourceless and has been removed.
+The signal "col/tts/douta<121>" is sourceless and has been removed.
+The signal "col/tts/douta<120>" is sourceless and has been removed.
+The signal "col/tts/douta<119>" is sourceless and has been removed.
+The signal "col/tts/douta<118>" is sourceless and has been removed.
+The signal "col/tts/douta<117>" is sourceless and has been removed.
+The signal "col/tts/douta<116>" is sourceless and has been removed.
+The signal "col/tts/douta<115>" is sourceless and has been removed.
+The signal "col/tts/douta<114>" is sourceless and has been removed.
+The signal "col/tts/douta<113>" is sourceless and has been removed.
+The signal "col/tts/douta<112>" is sourceless and has been removed.
+The signal "col/tts/douta<111>" is sourceless and has been removed.
+The signal "col/tts/douta<110>" is sourceless and has been removed.
+The signal "col/tts/douta<109>" is sourceless and has been removed.
+The signal "col/tts/douta<108>" is sourceless and has been removed.
+The signal "col/tts/douta<107>" is sourceless and has been removed.
+The signal "col/tts/douta<106>" is sourceless and has been removed.
+The signal "col/tts/douta<105>" is sourceless and has been removed.
+The signal "col/tts/douta<104>" is sourceless and has been removed.
+The signal "col/tts/douta<103>" is sourceless and has been removed.
+The signal "col/tts/douta<102>" is sourceless and has been removed.
+The signal "col/tts/douta<101>" is sourceless and has been removed.
+The signal "col/tts/douta<100>" is sourceless and has been removed.
+The signal "col/tts/douta<99>" is sourceless and has been removed.
+The signal "col/tts/douta<98>" is sourceless and has been removed.
+The signal "col/tts/douta<97>" is sourceless and has been removed.
+The signal "col/tts/douta<96>" is sourceless and has been removed.
+The signal "col/tts/douta<95>" is sourceless and has been removed.
+The signal "col/tts/douta<94>" is sourceless and has been removed.
+The signal "col/tts/douta<93>" is sourceless and has been removed.
+The signal "col/tts/douta<92>" is sourceless and has been removed.
+The signal "col/tts/douta<91>" is sourceless and has been removed.
+The signal "col/tts/douta<90>" is sourceless and has been removed.
+The signal "col/tts/douta<89>" is sourceless and has been removed.
+The signal "col/tts/douta<88>" is sourceless and has been removed.
+The signal "col/tts/douta<87>" is sourceless and has been removed.
+The signal "col/tts/douta<86>" is sourceless and has been removed.
+The signal "col/tts/douta<85>" is sourceless and has been removed.
+The signal "col/tts/douta<84>" is sourceless and has been removed.
+The signal "col/tts/douta<83>" is sourceless and has been removed.
+The signal "col/tts/douta<82>" is sourceless and has been removed.
+The signal "col/tts/douta<81>" is sourceless and has been removed.
+The signal "col/tts/douta<80>" is sourceless and has been removed.
+The signal "col/tts/douta<79>" is sourceless and has been removed.
+The signal "col/tts/douta<78>" is sourceless and has been removed.
+The signal "col/tts/douta<77>" is sourceless and has been removed.
+The signal "col/tts/douta<76>" is sourceless and has been removed.
+The signal "col/tts/douta<75>" is sourceless and has been removed.
+The signal "col/tts/douta<74>" is sourceless and has been removed.
+The signal "col/tts/douta<73>" is sourceless and has been removed.
+The signal "col/tts/douta<72>" is sourceless and has been removed.
+The signal "col/tts/douta<71>" is sourceless and has been removed.
+The signal "col/tts/douta<70>" is sourceless and has been removed.
+The signal "col/tts/douta<69>" is sourceless and has been removed.
+The signal "col/tts/douta<68>" is sourceless and has been removed.
+The signal "col/tts/douta<67>" is sourceless and has been removed.
+The signal "col/tts/douta<66>" is sourceless and has been removed.
+The signal "col/tts/douta<65>" is sourceless and has been removed.
+The signal "col/tts/douta<64>" is sourceless and has been removed.
+The signal "col/tts/douta<63>" is sourceless and has been removed.
+The signal "col/tts/douta<62>" is sourceless and has been removed.
+The signal "col/tts/douta<61>" is sourceless and has been removed.
+The signal "col/tts/douta<60>" is sourceless and has been removed.
+The signal "col/tts/douta<59>" is sourceless and has been removed.
+The signal "col/tts/douta<58>" is sourceless and has been removed.
+The signal "col/tts/douta<57>" is sourceless and has been removed.
+The signal "col/tts/douta<56>" is sourceless and has been removed.
+The signal "col/tts/douta<55>" is sourceless and has been removed.
+The signal "col/tts/douta<54>" is sourceless and has been removed.
+The signal "col/tts/douta<53>" is sourceless and has been removed.
+The signal "col/tts/douta<52>" is sourceless and has been removed.
+The signal "col/tts/douta<51>" is sourceless and has been removed.
+The signal "col/tts/douta<50>" is sourceless and has been removed.
+The signal "col/tts/douta<49>" is sourceless and has been removed.
+The signal "col/tts/douta<48>" is sourceless and has been removed.
+The signal "col/tts/douta<47>" is sourceless and has been removed.
+The signal "col/tts/douta<46>" is sourceless and has been removed.
+The signal "col/tts/douta<45>" is sourceless and has been removed.
+The signal "col/tts/douta<44>" is sourceless and has been removed.
+The signal "col/tts/douta<43>" is sourceless and has been removed.
+The signal "col/tts/douta<42>" is sourceless and has been removed.
+The signal "col/tts/douta<41>" is sourceless and has been removed.
+The signal "col/tts/douta<40>" is sourceless and has been removed.
+The signal "col/tts/douta<39>" is sourceless and has been removed.
+The signal "col/tts/douta<38>" is sourceless and has been removed.
+The signal "col/tts/douta<37>" is sourceless and has been removed.
+The signal "col/tts/douta<36>" is sourceless and has been removed.
+The signal "col/tts/douta<35>" is sourceless and has been removed.
+The signal "col/tts/douta<34>" is sourceless and has been removed.
+The signal "col/tts/douta<33>" is sourceless and has been removed.
+The signal "col/tts/douta<32>" is sourceless and has been removed.
+The signal "col/tts/douta<31>" is sourceless and has been removed.
+The signal "col/tts/douta<30>" is sourceless and has been removed.
+The signal "col/tts/douta<29>" is sourceless and has been removed.
+The signal "col/tts/douta<28>" is sourceless and has been removed.
+The signal "col/tts/douta<27>" is sourceless and has been removed.
+The signal "col/tts/douta<26>" is sourceless and has been removed.
+The signal "col/tts/douta<25>" is sourceless and has been removed.
+The signal "col/tts/douta<24>" is sourceless and has been removed.
+The signal "col/tts/douta<23>" is sourceless and has been removed.
+The signal "col/tts/douta<22>" is sourceless and has been removed.
+The signal "col/tts/douta<21>" is sourceless and has been removed.
+The signal "col/tts/douta<20>" is sourceless and has been removed.
+The signal "col/tts/douta<19>" is sourceless and has been removed.
+The signal "col/tts/douta<18>" is sourceless and has been removed.
+The signal "col/tts/douta<17>" is sourceless and has been removed.
+The signal "col/tts/douta<16>" is sourceless and has been removed.
+The signal "col/tts/douta<15>" is sourceless and has been removed.
+The signal "col/tts/douta<14>" is sourceless and has been removed.
+The signal "col/tts/douta<13>" is sourceless and has been removed.
+The signal "col/tts/douta<12>" is sourceless and has been removed.
+The signal "col/tts/douta<11>" is sourceless and has been removed.
+The signal "col/tts/douta<10>" is sourceless and has been removed.
+The signal "col/tts/douta<9>" is sourceless and has been removed.
+The signal "col/tts/douta<8>" is sourceless and has been removed.
+The signal "col/tts/douta<7>" is sourceless and has been removed.
+The signal "col/tts/douta<6>" is sourceless and has been removed.
+The signal "col/tts/douta<5>" is sourceless and has been removed.
+The signal "col/tts/douta<4>" is sourceless and has been removed.
+The signal "col/tts/douta<3>" is sourceless and has been removed.
+The signal "col/tts/douta<2>" is sourceless and has been removed.
+The signal "col/tts/douta<1>" is sourceless and has been removed.
+The signal "col/tts/douta<0>" is sourceless and has been removed.
+The signal "col/tts/N0" is sourceless and has been removed.
+The signal "col/tts/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "clk" is unused and has been removed.
+ Unused block "clk" (PAD) removed.
+The signal "rst_IBUF" is unused and has been removed.
+ Unused block "rst_IBUF" (BUF) removed.
+  The signal "rst" is unused and has been removed.
+   Unused block "rst" (PAD) removed.
+The signal "N0" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "instance_name/clkfbout_buf" is unused and has been removed.
+ Unused block "instance_name/clkf_buf" (CKBUF) removed.
+  The signal "instance_name/clkfbout" is unused and has been removed.
+The signal "instance_name/clkin1" is unused and has been removed.
+ Unused block "instance_name/clkin1_buf" (CKBUF) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[5].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block "col/tts/XST_GND" (ZERO) removed.
+Unused block "col/tts/XST_VCC" (ONE) removed.
+Unused block "instance_name/mmcm_adv_inst" (MMCME2_ADV) removed.
+Unused block
+"inter/screen/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/
+ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram" (RAMB18E1) removed.
+Unused block
+"inter/screen/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/
+ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"inter/screen/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/
+ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
 Unused block
 "inter/screen/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/
 ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
 Unused block
 "inter/screen/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/
 ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram" (RAMB36E1) removed.
+Unused block "inter/screen/XST_GND" (ZERO) removed.
+Unused block "inter/screen/XST_VCC" (ONE) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
-VCC 		XST_VCC
-GND 		col/tts/XST_GND
-VCC 		col/tts/XST_VCC
-GND 		inter/screen/XST_GND
-VCC 		inter/screen/XST_VCC
-
-To enable printing of redundant blocks removed and signals merged, set the
-detailed map report option and rerun map.
 
 Section 6 - IOB Properties
 --------------------------
@@ -383,7 +1054,6 @@ Section 6 - IOB Properties
 | b<1>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | bs<0>                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | bs<1>                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| clk                                | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | g<0>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | g<1>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | g<2>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
@@ -393,7 +1063,6 @@ Section 6 - IOB Properties
 | r<1>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | r<2>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | rs                                 | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| rst                                | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 | vsync                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 

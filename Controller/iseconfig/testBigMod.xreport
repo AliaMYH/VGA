@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-10T16:05:01</DateModified>
+  <DateModified>2015-05-10T20:33:38</DateModified>
   <ModuleName>testBigMod</ModuleName>
   <SummaryTimeStamp>2015-05-10T11:32:44</SummaryTimeStamp>
-  <SavedFilePath>I:/Controller/iseconfig/testBigMod.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>I:/Controller\</ImplementationReportsDirectory>
+  <SavedFilePath>Y:/Desktop/github/DigitalProject2/VGA/Controller/iseconfig/testBigMod.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Y:/Desktop/github/DigitalProject2/VGA/Controller\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-10T11:33:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
