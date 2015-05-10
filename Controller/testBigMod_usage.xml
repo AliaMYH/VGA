@@ -4,8 +4,8 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="22">
-<DesignStatistics TimeStamp="Sun May 10 17:48:22 2015"><group name="NetStatistics">
+<DeviceUsageSummary rev="23">
+<DesignStatistics TimeStamp="Sun May 10 21:04:43 2015"><group name="NetStatistics">
 <item name="NumNets_Active" rev="22">
 <attrib name="value" value="971"/></item>
 <item name="NumNets_Gnd" rev="22">
@@ -110,109 +110,20 @@
 <attrib name="value" value="62"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="21">
-<attrib name="value" value="16"/></item>
-<item name="AGG_IO" rev="21">
-<attrib name="value" value="16"/></item>
-<item name="AGG_LOCED_IO" rev="21">
-<attrib name="value" value="16"/></item>
-<item name="AGG_SLICE" rev="21">
-<attrib name="value" value="147"/></item>
-<item name="NUM_BONDED_IOB33" rev="21">
-<attrib name="value" value="16"/></item>
-<item name="NUM_BSFULL" rev="21">
-<attrib name="value" value="26"/></item>
-<item name="NUM_BSLUTONLY" rev="21">
-<attrib name="value" value="261"/></item>
-<item name="NUM_BSREGONLY" rev="21">
-<attrib name="value" value="1"/></item>
-<item name="NUM_BSUSED" rev="21">
-<attrib name="value" value="288"/></item>
-<item name="NUM_BUFG" rev="21">
-<attrib name="value" value="3"/></item>
-<item name="NUM_LOCED_IOB33" rev="21">
-<attrib name="value" value="16"/></item>
-<item name="NUM_LOGIC_O5ANDO6" rev="21">
-<attrib name="value" value="28"/></item>
-<item name="NUM_LOGIC_O5ONLY" rev="21">
-<attrib name="value" value="8"/></item>
-<item name="NUM_LOGIC_O6ONLY" rev="21">
-<attrib name="value" value="250"/></item>
-<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="21">
-<attrib name="value" value="1"/></item>
-<item name="NUM_LUT_RT_EXO6" rev="21">
-<attrib name="value" value="1"/></item>
-<item name="NUM_LUT_RT_O6" rev="21">
-<attrib name="value" value="8"/></item>
-<item name="NUM_MMCME2_ADV" rev="21">
-<attrib name="value" value="1"/></item>
-<item name="NUM_RAMB18E1" rev="21">
-<attrib name="value" value="2"/></item>
-<item name="NUM_RAMB36E1" rev="21">
-<attrib name="value" value="9"/></item>
-<item name="NUM_SLICEL" rev="21">
-<attrib name="value" value="147"/></item>
-<item name="NUM_SLICE_CARRY4" rev="21">
-<attrib name="value" value="6"/></item>
-<item name="NUM_SLICE_CONTROLSET" rev="21">
-<attrib name="value" value="5"/></item>
-<item name="NUM_SLICE_CYINIT" rev="21">
-<attrib name="value" value="324"/></item>
-<item name="NUM_SLICE_F7MUX" rev="21">
-<attrib name="value" value="4"/></item>
-<item name="NUM_SLICE_FF" rev="21">
-<attrib name="value" value="27"/></item>
-<item name="NUM_SLICE_UNUSEDCTRL" rev="21">
-<attrib name="value" value="135"/></item>
-<item name="NUM_UNUSABLE_FF_BELS" rev="21">
-<attrib name="value" value="29"/></item>
-<item name="Xilinx Core blk_mem_gen_v7_2, Xilinx CORE Generator 14.2" rev="21">
+<item name="AGG_BONDED_IO" rev="23">
+<attrib name="value" value="14"/></item>
+<item name="AGG_IO" rev="23">
+<attrib name="value" value="14"/></item>
+<item name="AGG_LOCED_IO" rev="23">
+<attrib name="value" value="14"/></item>
+<item name="NUM_BONDED_IOB33" rev="23">
+<attrib name="value" value="14"/></item>
+<item name="NUM_LOCED_IOB33" rev="23">
+<attrib name="value" value="14"/></item>
+<item name="Xilinx Core blk_mem_gen_v7_2, Xilinx CORE Generator 14.2" rev="23">
 <attrib name="value" value="2"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Sun May 10 17:48:22 2015"><group name="SiteSummary">
-<item name="BUFG" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
-<item name="BUFG_BUFG" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
-<item name="CARRY4" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="6"/></item>
-<item name="FF_INIT" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="HARD0" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IOB33" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
-<item name="IOB33_INBUF_EN" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
-<item name="IOB33_OUTBUF" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
-<item name="LUT5" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="36"/></item>
-<item name="LUT6" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="287"/></item>
-<item name="MMCME2_ADV" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="MMCME2_ADV_MMCME2_ADV" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="PAD" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
-<item name="RAMB18E1" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
-<item name="RAMB18E1_RAMB18E1" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
-<item name="RAMB36E1" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="9"/></item>
-<item name="RAMB36E1_RAMB36E1" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="9"/></item>
-<item name="REG_INIT" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="26"/></item>
-<item name="SELMUX2_1" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
-<item name="SLICEL" rev="22">
-<attrib name="total" value="1000000"/><attrib name="used" value="147"/></item>
-</group>
-</DeviceUsage>
 <ReportConfigData TimeStamp="Sun May 10 17:48:22 2015"><group name="REG_INIT">
 <item name="CK" rev="22">
 <attrib name="CK" value="26"/><attrib name="CK_INV" value="0"/></item>
