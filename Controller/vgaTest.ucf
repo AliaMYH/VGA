@@ -1,0 +1,24 @@
+NET "*" IOSTANDARD = LVCMOS33;
+
+NET "clk" LOC = E3;
+NET "rst" LOC = U9;
+
+NET "hsync" LOC = B11;
+NET "vsync" LOC = B12;
+
+NET "r[0]" LOC = A3;
+NET "r[1]" LOC = B4;
+NET "r[2]" LOC = C5;
+NET "rs" LOC = A4;
+
+NET "g[0]" LOC = C6;
+NET "g[1]" LOC = A5;
+NET "g[2]" LOC = B6;
+NET "gs" LOC = A6;
+
+NET "b[0]" LOC = B7;
+NET "b[1]" LOC = C7;
+NET "bs[0]" LOC = D7;
+NET "bs[1]" LOC = D8;
+
+

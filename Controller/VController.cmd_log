@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 VController.ngc VController.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o VController_map.ncd VController.ngd VController.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o VController_map.ncd VController.ngd VController.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o VController_map.ncd VController.ngd VController.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o VController_map.ncd VController.ngd VController.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o VController_map.ncd VController.ngd VController.pcf 
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o VController_map.ncd VController.ngd VController.pcf 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/VController.xst" -ofn "Y:/Documents/Controller/VController.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-2 VController.ngc VController.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VController_map.ncd VController.ngd VController.pcf 

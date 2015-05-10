@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/testTileset.v"
+verilog work "ipcore_dir/testScreen_synth.v"
+verilog work "ColorSelector.v"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=I:\Controller\testBigMod.ncd
+OUTFILE=I:\Controller\testBigMod.bit
+FAMILY=Artix7
+PART=xc7a100t-2csg324
+WORKINGDIR=I:\Controller
+LICENSE=WebPack
+USER_INFO=210684813_0_0_436

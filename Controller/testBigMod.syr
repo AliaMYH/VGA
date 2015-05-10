@@ -1,0 +1,658 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: testBigMod.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testBigMod.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testBigMod"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2-csg324
+
+---- Source Options
+Top Module Name                    : testBigMod
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "I:\Controller\ipcore_dir\cccc.v" into library work
+Parsing module <cccc>.
+Analyzing Verilog file "I:\Controller\ipcore_dir\cccc\example_design\cccc_exdes.v" into library work
+Parsing module <cccc_exdes>.
+Analyzing Verilog file "I:\Controller\ipcore_dir\tilesetS.v" into library work
+Parsing module <tilesetS>.
+Analyzing Verilog file "I:\Controller\ipcore_dir\screenS.v" into library work
+Parsing module <screenS>.
+Analyzing Verilog file "I:\exp8\count2bit.v" into library work
+Parsing module <count2bit>.
+Analyzing Verilog file "I:\Controller\VController.v" into library work
+Parsing module <VController>.
+Analyzing Verilog file "I:\Controller\InterruptManager.v" into library work
+Parsing module <InterruptManager>.
+Analyzing Verilog file "I:\Controller\ColorSelector.v" into library work
+Parsing module <ColorSelector>.
+Analyzing Verilog file "I:\Controller\testBigMod.v" into library work
+Parsing module <testBigMod>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <testBigMod>.
+
+Elaborating module <cccc>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <MMCME2_ADV(BANDWIDTH="OPTIMIZED",CLKOUT4_CASCADE="FALSE",COMPENSATION="ZHOLD",STARTUP_WAIT="FALSE",DIVCLK_DIVIDE=1,CLKFBOUT_MULT_F=10.0,CLKFBOUT_PHASE=0.0,CLKFBOUT_USE_FINE_PS="FALSE",CLKOUT0_DIVIDE_F=10.0,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT0_USE_FINE_PS="FALSE",CLKIN1_PERIOD=10.0,REF_JITTER1=0.01)>.
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 127: Assignment to clkfboutb_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 129: Assignment to clkout0b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 130: Assignment to clkout1_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 131: Assignment to clkout1b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 132: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 133: Assignment to clkout2b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 134: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 135: Assignment to clkout3b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 136: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 137: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 138: Assignment to clkout6_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 150: Assignment to do_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 151: Assignment to drdy_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 157: Assignment to psdone_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 159: Assignment to locked_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 160: Assignment to clkinstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "I:\Controller\ipcore_dir\cccc.v" Line 161: Assignment to clkfbstopped_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <count2bit>.
+
+Elaborating module <VController>.
+WARNING:HDLCompiler:413 - "I:\Controller\VController.v" Line 42: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "I:\Controller\VController.v" Line 55: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "I:\Controller\VController.v" Line 56: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <InterruptManager>.
+WARNING:HDLCompiler:413 - "I:\Controller\InterruptManager.v" Line 40: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "I:\Controller\InterruptManager.v" Line 42: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "I:\Controller\InterruptManager.v" Line 44: Result of 32-bit expression is truncated to fit in 7-bit target.
+
+Elaborating module <screenS>.
+WARNING:HDLCompiler:1499 - "I:\Controller\ipcore_dir\screenS.v" Line 39: Empty module <screenS> remains a black box.
+
+Elaborating module <ColorSelector>.
+
+Elaborating module <tilesetS>.
+WARNING:HDLCompiler:1499 - "I:\Controller\ipcore_dir\tilesetS.v" Line 39: Empty module <tilesetS> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testBigMod>.
+    Related source file is "I:\Controller\testBigMod.v".
+    Summary:
+	no macro.
+Unit <testBigMod> synthesized.
+
+Synthesizing Unit <cccc>.
+    Related source file is "I:\Controller\ipcore_dir\cccc.v".
+    Summary:
+	no macro.
+Unit <cccc> synthesized.
+
+Synthesizing Unit <count2bit>.
+    Related source file is "I:\exp8\count2bit.v".
+    Found 2-bit register for signal <Out>.
+    Found 2-bit adder for signal <Out[1]_GND_6_o_add_1_OUT> created at line 32.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <count2bit> synthesized.
+
+Synthesizing Unit <VController>.
+    Related source file is "I:\Controller\VController.v".
+        hpixels = 10'b1100100000
+        hbackporch = 10'b0010010000
+        hfrontporch = 10'b1100010000
+        hpulsewidth = 10'b0001100000
+        vpixels = 10'b1000001001
+        vbackporch = 10'b0000011111
+        vfrontporch = 10'b0111111111
+        vpulsewidth = 10'b0000000010
+    Found 10-bit register for signal <vcount>.
+    Found 10-bit register for signal <hcount>.
+    Found 1-bit register for signal <flag>.
+    Found 10-bit adder for signal <hcount[9]_GND_7_o_add_7_OUT> created at line 49.
+    Found 10-bit adder for signal <vcount[9]_GND_7_o_add_17_OUT> created at line 73.
+    Found 10-bit comparator greater for signal <hcount[9]_PWR_7_o_LessThan_1_o> created at line 42
+    Found 10-bit comparator greater for signal <GND_7_o_hcount[9]_LessThan_2_o> created at line 42
+    Found 10-bit comparator greater for signal <vcount[9]_GND_7_o_LessThan_3_o> created at line 42
+    Found 10-bit comparator greater for signal <GND_7_o_vcount[9]_LessThan_4_o> created at line 42
+    Found 10-bit comparator greater for signal <hcount[9]_PWR_7_o_LessThan_7_o> created at line 48
+    Found 10-bit comparator greater for signal <hcount[9]_GND_7_o_LessThan_11_o> created at line 55
+    Found 10-bit comparator greater for signal <vcount[9]_GND_7_o_LessThan_13_o> created at line 56
+    Found 10-bit comparator greater for signal <vcount[9]_PWR_7_o_LessThan_17_o> created at line 72
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <VController> synthesized.
+
+Synthesizing Unit <InterruptManager>.
+    Related source file is "I:\Controller\InterruptManager.v".
+        hleft = 10'b0010010000
+        vtop = 10'b0000011111
+    Found 4-bit register for signal <tselect>.
+    Found 11-bit subtractor for signal <n0022> created at line 40.
+    Found 11-bit subtractor for signal <n0023> created at line 42.
+    Found 8-bit adder for signal <n0037> created at line 63.
+    Found 8-bit adder for signal <n0039> created at line 64.
+    Found 8-bit adder for signal <n0041> created at line 65.
+    Found 1-bit 128-to-1 multiplexer for signal <hselect[6]_line[127]_Mux_6_o> created at line 62.
+    Found 1-bit 256-to-1 multiplexer for signal <BUS_0001_line[255]_Mux_8_o> created at line 63.
+    Found 1-bit 256-to-1 multiplexer for signal <BUS_0002_line[255]_Mux_10_o> created at line 64.
+    Found 1-bit 256-to-1 multiplexer for signal <BUS_0003_line[255]_Mux_12_o> created at line 65.
+    Found 10-bit comparator greater for signal <GND_8_o_hcount[9]_LessThan_6_o> created at line 60
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <InterruptManager> synthesized.
+
+Synthesizing Unit <ColorSelector>.
+    Related source file is "I:\Controller\ColorSelector.v".
+        hleft = 10'b0010010000
+        vtop = 10'b0000011111
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_1_OUT> created at line 48.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_3_OUT> created at line 48.
+    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_4_OUT> created at line 48.
+    Found 32-bit adder for signal <n0040> created at line 63.
+    Found 32-bit adder for signal <n0041> created at line 64.
+    Found 32-bit adder for signal <n0042> created at line 66.
+    Found 32-bit adder for signal <n0043> created at line 67.
+    Found 32-bit adder for signal <n0044> created at line 68.
+    Found 32-bit adder for signal <n0045> created at line 70.
+    Found 32-bit adder for signal <n0046> created at line 71.
+    Found 1-bit 512-to-1 multiplexer for signal <add[8]_line[511]_Mux_6_o> created at line 62.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_8_o> created at line 63.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_10_o> created at line 64.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_12_o> created at line 66.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_14_o> created at line 67.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_16_o> created at line 68.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_18_o> created at line 70.
+    Found 1-bit 512-to-1 multiplexer for signal <add[31]_line[511]_Mux_20_o> created at line 71.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  15 Multiplexer(s).
+Unit <ColorSelector> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 10-bit adder                                          : 2
+ 11-bit subtractor                                     : 4
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 8
+ 8-bit adder                                           : 3
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 10-bit register                                       : 2
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 9
+ 10-bit comparator greater                             : 9
+# Multiplexers                                         : 23
+ 1-bit 128-to-1 multiplexer                            : 1
+ 1-bit 256-to-1 multiplexer                            : 3
+ 1-bit 512-to-1 multiplexer                            : 8
+ 10-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/screenS.ngc>.
+Reading core <ipcore_dir/tilesetS.ngc>.
+Loading core <screenS> for timing and area information for instance <screen>.
+Loading core <tilesetS> for timing and area information for instance <tts>.
+
+Synthesizing (advanced) Unit <VController>.
+The following registers are absorbed into counter <hcount>: 1 register on signal <hcount>.
+The following registers are absorbed into counter <vcount>: 1 register on signal <vcount>.
+Unit <VController> synthesized (advanced).
+
+Synthesizing (advanced) Unit <count2bit>.
+The following registers are absorbed into counter <Out>: 1 register on signal <Out>.
+Unit <count2bit> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 11-bit subtractor                                     : 2
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 1
+ 8-bit adder                                           : 3
+ 9-bit adder                                           : 7
+# Counters                                             : 3
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 9
+ 10-bit comparator greater                             : 9
+# Multiplexers                                         : 22
+ 1-bit 128-to-1 multiplexer                            : 1
+ 1-bit 256-to-1 multiplexer                            : 3
+ 1-bit 512-to-1 multiplexer                            : 8
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <testBigMod> ...
+
+Optimizing unit <VController> ...
+
+Optimizing unit <InterruptManager> ...
+
+Optimizing unit <ColorSelector> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testBigMod, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : testBigMod.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 355
+#      GND                         : 3
+#      INV                         : 2
+#      LUT1                        : 9
+#      LUT2                        : 16
+#      LUT3                        : 28
+#      LUT4                        : 5
+#      LUT5                        : 33
+#      LUT6                        : 214
+#      MUXCY                       : 18
+#      MUXF7                       : 4
+#      VCC                         : 3
+#      XORCY                       : 20
+# FlipFlops/Latches                : 27
+#      FD                          : 2
+#      FDC                         : 10
+#      FDCE                        : 15
+# RAMS                             : 13
+#      RAMB18E1                    : 2
+#      RAMB36E1                    : 11
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 16
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 14
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              27  out of  126800     0%  
+ Number of Slice LUTs:                  307  out of  63400     0%  
+    Number used as Logic:               307  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    308
+   Number with an unused Flip Flop:     281  out of    308    91%  
+   Number with an unused LUT:             1  out of    308     0%  
+   Number of fully used LUT-FF pairs:    26  out of    308     8%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    210     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               12  out of    135     8%  
+    Number using Block RAM only:         12
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+instance_name/clkout0              | BUFG                   | 2     |
+clkdiv(hi/clkdiv<1>1:O)            | BUFG(*)(cont/vcount_9) | 38    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                         | Buffer(FF name)                                                                                                                                 | Load  |
+---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+col/tts/N1(col/tts/XST_GND:G)          | NONE(col/tts/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram)     | 14    |
+inter/screen/N1(inter/screen/XST_GND:G)| NONE(inter/screen/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM36.ram)| 8     |
+---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.063ns (Maximum Frequency: 246.127MHz)
+   Minimum input arrival time before clock: 0.867ns
+   Maximum output required time after clock: 6.423ns
+   Maximum combinational path delay: 1.224ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'instance_name/clkout0'
+  Clock period: 1.226ns (frequency: 815.528MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               1.226ns (Levels of Logic = 1)
+  Source:            hi/Out_0 (FF)
+  Destination:       hi/Out_0 (FF)
+  Source Clock:      instance_name/clkout0 rising
+  Destination Clock: instance_name/clkout0 rising
+
+  Data Path: hi/Out_0 to hi/Out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.398   0.351  hi/Out_0 (hi/Out_0)
+     INV:I->O              1   0.123   0.339  hi/Mcount_Out_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.015          hi/Out_0
+    ----------------------------------------
+    Total                      1.226ns (0.536ns logic, 0.690ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv'
+  Clock period: 4.063ns (frequency: 246.127MHz)
+  Total number of paths / destination ports: 3431 / 59
+-------------------------------------------------------------------------
+Delay:               4.063ns (Levels of Logic = 6)
+  Source:            cont/vcount_9 (FF)
+  Destination:       inter/tselect_3 (FF)
+  Source Clock:      clkdiv rising
+  Destination Clock: clkdiv rising
+
+  Data Path: cont/vcount_9 to inter/tselect_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.398   0.797  cont/vcount_9 (cont/vcount_9)
+     LUT5:I0->O            1   0.105   0.357  cont/hcount[9]_GND_7_o_AND_3_o4 (cont/hcount[9]_GND_7_o_AND_3_o3)
+     LUT5:I4->O            4   0.105   0.468  cont/hcount[9]_GND_7_o_AND_3_o5 (cont/hcount[9]_GND_7_o_AND_3_o4)
+     LUT6:I4->O            2   0.105   0.362  cont/hcount[9]_GND_7_o_AND_3_o6_1 (cont/hcount[9]_GND_7_o_AND_3_o6)
+     LUT3:I2->O            8   0.105   0.832  inter/Mmux_n002031 (inter/n0020<4>)
+     LUT6:I0->O            1   0.105   0.000  inter/Mmux_BUS_0003_line[255]_Mux_12_o_3 (inter/Mmux_BUS_0003_line[255]_Mux_12_o_3)
+     MUXF7:I1->O           1   0.308   0.000  inter/Mmux_BUS_0003_line[255]_Mux_12_o_2_f7 (inter/BUS_0003_line[255]_Mux_12_o)
+     FDCE:D                    0.015          inter/tselect_3
+    ----------------------------------------
+    Total                      4.063ns (1.246ns logic, 2.817ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              0.867ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       cont/vcount_9 (FF)
+  Destination Clock: clkdiv rising
+
+  Data Path: rst to cont/vcount_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.001   0.469  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.397          cont/flag
+    ----------------------------------------
+    Total                      0.867ns (0.398ns logic, 0.469ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv'
+  Total number of paths / destination ports: 15246 / 10
+-------------------------------------------------------------------------
+Offset:              6.423ns (Levels of Logic = 9)
+  Source:            cont/vcount_9 (FF)
+  Destination:       r<2> (PAD)
+  Source Clock:      clkdiv rising
+
+  Data Path: cont/vcount_9 to r<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.398   0.797  cont/vcount_9 (cont/vcount_9)
+     LUT5:I0->O            1   0.105   0.357  cont/hcount[9]_GND_7_o_AND_3_o4 (cont/hcount[9]_GND_7_o_AND_3_o3)
+     LUT5:I4->O            4   0.105   0.468  cont/hcount[9]_GND_7_o_AND_3_o5 (cont/hcount[9]_GND_7_o_AND_3_o4)
+     LUT6:I4->O           43   0.105   0.583  cont/hcount[9]_GND_7_o_AND_3_o6 (bright)
+     LUT2:I0->O          128   0.105   0.941  col/Mmux_add21 (col/add<4>)
+     LUT6:I0->O            1   0.105   0.649  col/Mmux_add[8]_line[511]_Mux_6_o_122 (col/Mmux_add[8]_line[511]_Mux_6_o_122)
+     LUT6:I2->O            1   0.105   0.599  col/Mmux_add[8]_line[511]_Mux_6_o_7 (col/Mmux_add[8]_line[511]_Mux_6_o_7)
+     LUT5:I2->O            1   0.105   0.451  col/Mmux_R12 (col/Mmux_R11)
+     LUT5:I3->O            1   0.105   0.339  col/Mmux_R13 (r_0_OBUF)
+     OBUF:I->O                 0.000          r_0_OBUF (r<0>)
+    ----------------------------------------
+    Total                      6.423ns (1.238ns logic, 5.185ns route)
+                                       (19.3% logic, 80.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Delay:               1.224ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       r<2> (PAD)
+
+  Data Path: rst to r<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.001   0.779  rst_IBUF (rst_IBUF)
+     LUT5:I1->O            1   0.105   0.339  col/Mmux_R33 (r_2_OBUF)
+     OBUF:I->O                 0.000          r_2_OBUF (r<2>)
+    ----------------------------------------
+    Total                      1.224ns (0.106ns logic, 1.118ns route)
+                                       (8.7% logic, 91.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkdiv
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv         |    4.063|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instance_name/clkout0
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+instance_name/clkout0|    1.226|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.81 secs
+ 
+--> 
+
+Total memory usage is 451280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
