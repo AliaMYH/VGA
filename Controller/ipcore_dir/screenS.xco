@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.2
-# Date: Sun May 10 13:49:34 2015
+# Date: Tue May 12 07:26:08 2015
 #
 ##############################################################
 #
@@ -31,7 +31,7 @@ SET implementationfiletype = Ngc
 SET package = csg324
 SET removerpms = false
 SET simulationfiles = Behavioral
-SET speedgrade = -2
+SET speedgrade = -3
 SET verilogsim = true
 SET vhdlsim = false
 # END Project Options
@@ -46,9 +46,9 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=I:\Controller\Mem_Init_S.coe
+CSET coe_file=Y:\Desktop\github\DigitalProject2\VGA\Controller\Mem_Init_S.coe
 CSET collision_warnings=ALL
-CSET component_name=screenS
+CSET component_name=ScreenS
 CSET disable_collision_warnings=false
 CSET disable_out_of_range_warnings=false
 CSET ecc=false
@@ -103,4 +103,4 @@ CSET write_width_b=320
 MISC pkg_timestamp=2012-06-25T21:54:09Z
 # END Extra information
 GENERATE
-# CRC: 4ade5881
+# CRC: af6d1087

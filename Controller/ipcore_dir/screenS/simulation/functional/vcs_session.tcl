@@ -70,12 +70,12 @@ gui_set_precision 1ps
 gui_set_time_units 1ps
 
 gui_open_window Wave
-gui_sg_create screenS_Group
-gui_list_add_group -id Wave.1 {screenS_Group}
+gui_sg_create ScreenS_Group
+gui_list_add_group -id Wave.1 {ScreenS_Group}
 
-      gui_sg_addsignal -group screenS_Group  /screenS_tb/status
-      gui_sg_addsignal -group screenS_Group  /screenS_tb/screenS_synth_inst/bmg_port/CLKA
-      gui_sg_addsignal -group screenS_Group  /screenS_tb/screenS_synth_inst/bmg_port/ADDRA
-      gui_sg_addsignal -group screenS_Group  /screenS_tb/screenS_synth_inst/bmg_port/DOUTA
+      gui_sg_addsignal -group ScreenS_Group  /ScreenS_tb/status
+      gui_sg_addsignal -group ScreenS_Group  /ScreenS_tb/ScreenS_synth_inst/bmg_port/CLKA
+      gui_sg_addsignal -group ScreenS_Group  /ScreenS_tb/ScreenS_synth_inst/bmg_port/ADDRA
+      gui_sg_addsignal -group ScreenS_Group  /ScreenS_tb/ScreenS_synth_inst/bmg_port/DOUTA
 
 gui_zoom -window Wave.1 -full

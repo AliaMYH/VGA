@@ -45,23 +45,23 @@
 # PART OF THIS FILE AT ALL TIMES.
 #--------------------------------------------------------------------------------
 #!/bin/sh
-cp ../../../screenS.mif .
+cp ../../../ScreenS.mif .
 rm -rf simv* csrc DVEfiles AN.DB
 
 echo "Compiling Core Verilog UNISIM/Behavioral model"
-vlogan +v2k  ../../../screenS.v
-vhdlan  ../../example_design/screenS_exdes.vhd
+vlogan +v2k  ../../../ScreenS.v
+vhdlan  ../../example_design/ScreenS_exdes.vhd
 
 echo "Compiling Test Bench Files"
 vhdlan    ../bmg_tb_pkg.vhd
 vhdlan    ../addr_gen.vhd
 vhdlan    ../bmg_stim_gen.vhd
-vhdlan    ../screenS_synth.vhd 
-vhdlan    ../screenS_tb.vhd
+vhdlan    ../ScreenS_synth.vhd 
+vhdlan    ../ScreenS_tb.vhd
 
 echo "Elaborating Design"
 vlogan +v2k $XILINX/verilog/src/glbl.v
-vcs +vcs+lic+wait -debug screenS_tb glbl
+vcs +vcs+lic+wait -debug ScreenS_tb glbl
 
 echo "Simulating Design"
 ./simv -ucli -i ucli_commands.key

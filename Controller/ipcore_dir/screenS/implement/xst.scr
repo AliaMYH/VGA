@@ -1,12 +1,12 @@
 run
 -ifmt VHDL
--ent screenS_exdes
--p xc7a100t-csg324-2
+-ent ScreenS_exdes
+-p xc7a100t-csg324-3
 -ifn xst.prj
 -write_timing_constraints No
 -iobuf YES
 -max_fanout 100
--ofn screenS_exdes 
+-ofn ScreenS_exdes 
 -ofmt NGC
 -bus_delimiter ()
 -hierarchy_separator /

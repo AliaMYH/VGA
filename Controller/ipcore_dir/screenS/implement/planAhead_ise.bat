@@ -51,5 +51,5 @@ rem ----------------------------------------------------------------------------
 rmdir /S /Q results
 mkdir results
 cd results
-copy ..\..\..\screenS.ngc .
+copy ..\..\..\ScreenS.ngc .
 planAhead -mode batch -source ..\planAhead_ise.tcl

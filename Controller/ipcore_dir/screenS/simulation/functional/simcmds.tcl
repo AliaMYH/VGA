@@ -53,9 +53,9 @@
 
 wcfg new
 isim set radix hex
-wave add /screenS_tb/status
-      wave add  /screenS_tb/screenS_synth_inst/BMG_PORT/CLKA
-      wave add  /screenS_tb/screenS_synth_inst/BMG_PORT/ADDRA
-      wave add  /screenS_tb/screenS_synth_inst/BMG_PORT/DOUTA
+wave add /ScreenS_tb/status
+      wave add  /ScreenS_tb/ScreenS_synth_inst/BMG_PORT/CLKA
+      wave add  /ScreenS_tb/ScreenS_synth_inst/BMG_PORT/ADDRA
+      wave add  /ScreenS_tb/ScreenS_synth_inst/BMG_PORT/DOUTA
 run all
 quit

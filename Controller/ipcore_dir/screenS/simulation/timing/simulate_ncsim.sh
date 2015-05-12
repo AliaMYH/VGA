@@ -46,7 +46,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 set work work
 #--------------------------------------------------------------------------------
-cp ../../../screenS.mif .
+cp ../../../ScreenS.mif .
 mkdir work
 
 
@@ -57,20 +57,20 @@ echo "Compiling Test Bench Files"
 ncvhdl -v93 -work work    ../bmg_tb_pkg.vhd
 ncvhdl -v93 -work work    ../addr_gen.vhd
 ncvhdl -v93 -work work    ../bmg_stim_gen.vhd
-ncvhdl -v93 -work work    ../screenS_synth.vhd 
-ncvhdl -v93 -work work    ../screenS_tb.vhd
+ncvhdl -v93 -work work    ../ScreenS_synth.vhd 
+ncvhdl -v93 -work work    ../ScreenS_tb.vhd
 
 echo "Compiling SDF file"
 ncsdfc ../../implement/results/routed.sdf -output ./routed.sdf.X
 
 echo "Generating SDF command file"
 echo 'COMPILED_SDF_FILE = "routed.sdf.X",' > sdf.cmd
-echo 'SCOPE = :screenS_synth_inst:BMG_PORT,' >> sdf.cmd
+echo 'SCOPE = :ScreenS_synth_inst:BMG_PORT,' >> sdf.cmd
 echo 'MTM_CONTROL = "MAXIMUM";' >> sdf.cmd
 
 
 echo "Elaborating Design"
-ncelab -access +rwc glbl -sdf_cmd_file sdf.cmd $work.screenS_tb
+ncelab -access +rwc glbl -sdf_cmd_file sdf.cmd $work.ScreenS_tb
 
 echo "Simulating Design"
-ncsim -gui -input @"simvision -input wave_ncsim.sv" $work.screenS_tb
+ncsim -gui -input @"simvision -input wave_ncsim.sv" $work.ScreenS_tb

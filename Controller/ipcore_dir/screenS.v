@@ -25,8 +25,8 @@
 *     (c) Copyright 1995-2015 Xilinx, Inc.                                     *
 *     All rights reserved.                                                     *
 *******************************************************************************/
-// You must compile the wrapper file screenS.v when simulating
-// the core, screenS. When compiling the wrapper file, be sure to
+// You must compile the wrapper file ScreenS.v when simulating
+// the core, ScreenS. When compiling the wrapper file, be sure to
 // reference the XilinxCoreLib Verilog simulation library. For detailed
 // instructions, please refer to the "CORE Generator Help".
 
@@ -36,7 +36,7 @@
 
 `timescale 1ns/1ps
 
-module screenS(
+module ScreenS(
   clka,
   addra,
   douta
@@ -76,7 +76,7 @@ output [319 : 0] douta;
     .C_HAS_RSTB(0),
     .C_HAS_SOFTECC_INPUT_REGS_A(0),
     .C_HAS_SOFTECC_OUTPUT_REGS_B(0),
-    .C_INIT_FILE_NAME("screenS.mif"),
+    .C_INIT_FILE_NAME("ScreenS.mif"),
     .C_INITA_VAL("0"),
     .C_INITB_VAL("0"),
     .C_INTERFACE_TYPE(0),

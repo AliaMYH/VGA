@@ -61,7 +61,7 @@
 
 --------------------------------------------------------------------------------
 --
--- Filename: screenS_synth.vhd
+-- Filename: ScreenS_synth.vhd
 --
 -- Description:
 --  Synthesizable Testbench
@@ -92,7 +92,7 @@ LIBRARY work;
 USE work.ALL;
 USE work.BMG_TB_PKG.ALL;
 
-ENTITY screenS_synth IS
+ENTITY ScreenS_synth IS
 GENERIC ( 
    C_ROM_SYNTH : INTEGER := 1
    );
@@ -103,10 +103,10 @@ PORT(
     );
 END ENTITY;
 
-ARCHITECTURE screenS_synth_ARCH OF screenS_synth IS
+ARCHITECTURE ScreenS_synth_ARCH OF ScreenS_synth IS
 
 
-COMPONENT screenS_exdes 
+COMPONENT ScreenS_exdes 
   PORT (
       --Inputs - Port A
     ADDRA          : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -246,7 +246,7 @@ STATUS(7 DOWNTO 0) <= ISSUE_FLAG_STATUS;
       END PROCESS;
 
 
-    BMG_PORT: screenS_exdes PORT MAP ( 
+    BMG_PORT: ScreenS_exdes PORT MAP ( 
       --Port A
       ADDRA      => ADDRA_R,
       DOUTA      => DOUTA,

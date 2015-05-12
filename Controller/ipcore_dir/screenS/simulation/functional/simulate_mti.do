@@ -44,25 +44,25 @@
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
 #--------------------------------------------------------------------------------
-cp ../../../screenS.mif .
+cp ../../../ScreenS.mif .
  vlib work 
 vmap work work
 
 echo "Compiling Core Verilog UNISIM/Behavioral model"
-vlog -work work ../../../screenS.v 
-vcom -work work ../../example_design/screenS_exdes.vhd
+vlog -work work ../../../ScreenS.v 
+vcom -work work ../../example_design/ScreenS_exdes.vhd
 
 echo "Compiling Test Bench Files"
 
 vcom -work work    ../bmg_tb_pkg.vhd
 vcom -work work    ../addr_gen.vhd
 vcom -work work    ../bmg_stim_gen.vhd
-vcom -work work    ../screenS_synth.vhd 
-vcom -work work    ../screenS_tb.vhd
+vcom -work work    ../ScreenS_synth.vhd 
+vcom -work work    ../ScreenS_tb.vhd
 
 
 vlog -work work $env(XILINX)/verilog/src/glbl.v
-vsim  -novopt -t ps -L XilinxCoreLib_ver -L unisims_ver glbl work.screenS_tb
+vsim  -novopt -t ps -L XilinxCoreLib_ver -L unisims_ver glbl work.ScreenS_tb
 
 #Disabled waveform to save the disk space
 add log -r /*

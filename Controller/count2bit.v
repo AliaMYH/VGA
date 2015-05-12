@@ -24,13 +24,13 @@ module count2bit(
     output reg clkdiv
     );
 
-reg [1:0] out;
+reg out;
 
 always @ (posedge clk or posedge rst) 
 begin
 	if (rst)
 		out<= 0;
-	else if(out == 2'b00)
+	else if(out == 1'b0)
 		out<= out+1'b1;
 		else out<=0;
 end
@@ -40,7 +40,7 @@ begin
 	if (rst) 
 		clkdiv <= 0; 
 	else 
-	clkdiv <=(out == 2'b00) ? ~clkdiv : clkdiv;
+	clkdiv <=(out == 1'b0) ? ~clkdiv : clkdiv;
 end
 
 

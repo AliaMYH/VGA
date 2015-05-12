@@ -10,10 +10,10 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 
-      add wave -noupdate /screenS_tb/status
-      add wave -noupdate /screenS_tb/screenS_synth_inst/bmg_port/CLKA
-      add wave -noupdate /screenS_tb/screenS_synth_inst/bmg_port/ADDRA
-      add wave -noupdate /screenS_tb/screenS_synth_inst/bmg_port/DOUTA
+      add wave -noupdate /ScreenS_tb/status
+      add wave -noupdate /ScreenS_tb/ScreenS_synth_inst/bmg_port/CLKA
+      add wave -noupdate /ScreenS_tb/ScreenS_synth_inst/bmg_port/ADDRA
+      add wave -noupdate /ScreenS_tb/ScreenS_synth_inst/bmg_port/DOUTA
 
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}

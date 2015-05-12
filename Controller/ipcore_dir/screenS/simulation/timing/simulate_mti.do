@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 set work work
 #--------------------------------------------------------------------------------
-cp ../../../screenS.mif .
+cp ../../../ScreenS.mif .
 
 vlib work
 vmap work work
@@ -58,10 +58,10 @@ echo "Compiling Test Bench Files"
 vcom -work work    ../bmg_tb_pkg.vhd
 vcom -work work    ../addr_gen.vhd
 vcom -work work    ../bmg_stim_gen.vhd
-vcom -work work    ../screenS_synth.vhd 
-vcom -work work    ../screenS_tb.vhd
+vcom -work work    ../ScreenS_synth.vhd 
+vcom -work work    ../ScreenS_tb.vhd
 
-    vsim -novopt -t ps  -L simprims_ver +transport_int_delays -sdftyp /screenS_tb/screenS_synth_inst/bmg_port=../../implement/results/routed.sdf $work.screenS_tb $work.glbl -novopt
+    vsim -novopt -t ps  -L simprims_ver +transport_int_delays -sdftyp /ScreenS_tb/ScreenS_synth_inst/bmg_port=../../implement/results/routed.sdf $work.ScreenS_tb $work.glbl -novopt
 
 #Disabled waveform to save the disk space
 add log -r /*

@@ -60,7 +60,7 @@
 
 --------------------------------------------------------------------------------
 --
--- Filename: screenS_exdes.vhd
+-- Filename: ScreenS_exdes.vhd
 --
 -- Description:
 --   This is the actual BMG core wrapper.
@@ -86,7 +86,7 @@ USE UNISIM.VCOMPONENTS.ALL;
 --------------------------------------------------------------------------------
 -- Entity Declaration
 --------------------------------------------------------------------------------
-ENTITY screenS_exdes IS
+ENTITY ScreenS_exdes IS
   PORT (
       --Inputs - Port A
     ADDRA          : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -97,10 +97,10 @@ ENTITY screenS_exdes IS
 
   );
 
-END screenS_exdes;
+END ScreenS_exdes;
 
 
-ARCHITECTURE xilinx OF screenS_exdes IS
+ARCHITECTURE xilinx OF ScreenS_exdes IS
 
   COMPONENT BUFG IS
   PORT (
@@ -109,7 +109,7 @@ ARCHITECTURE xilinx OF screenS_exdes IS
   );
   END COMPONENT;
 
-  COMPONENT screenS IS
+  COMPONENT ScreenS IS
   PORT (
       --Port A
     ADDRA      : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -137,7 +137,7 @@ BEGIN
 
 
 
-  bmg0 : screenS
+  bmg0 : ScreenS
     PORT MAP (
       --Port A
       ADDRA      => ADDRA,

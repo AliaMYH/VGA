@@ -45,23 +45,23 @@
 :: PART OF THIS FILE AT ALL TIMES.
 ::--------------------------------------------------------------------------------
 
-cp ..\..\..\screenS.mif .
+cp ..\..\..\ScreenS.mif .
 
 
 echo "Compiling Core Verilog UNISIM/Behavioral model"
-vlogcomp -work work ..\..\..\screenS.v 
-vhpcomp -work work ..\..\example_design\screenS_exdes.vhd
+vlogcomp -work work ..\..\..\ScreenS.v 
+vhpcomp -work work ..\..\example_design\ScreenS_exdes.vhd
 
 echo "Compiling Test Bench Files"
 
 vhpcomp -work work    ..\bmg_tb_pkg.vhd
 vhpcomp -work work    ..\addr_gen.vhd
 vhpcomp -work work    ..\bmg_stim_gen.vhd
-vhpcomp -work work    ..\screenS_synth.vhd 
-vhpcomp -work work    ..\screenS_tb.vhd
+vhpcomp -work work    ..\ScreenS_synth.vhd 
+vhpcomp -work work    ..\ScreenS_tb.vhd
 
 
 vlogcomp -work work $XILINX\verilog\src\glbl.v
-fuse work.screenS_tb work.glbl -L unisims_ver -L xilinxcorelib_ver -o screenS_tb.exe
+fuse work.ScreenS_tb work.glbl -L unisims_ver -L xilinxcorelib_ver -o ScreenS_tb.exe
 
-.\screenS_tb.exe -gui -tclbatch simcmds.tcl
+.\ScreenS_tb.exe -gui -tclbatch simcmds.tcl

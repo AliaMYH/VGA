@@ -45,25 +45,25 @@
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
 #--------------------------------------------------------------------------------
-cp ../../../screenS.mif .
+cp ../../../ScreenS.mif .
 
 
 mkdir work
 echo "Compiling Core Verilog UNISIM/Behavioral model"
-ncvlog -work work ../../../screenS.v 
-ncvhdl -v93 -work work ../../example_design/screenS_exdes.vhd
+ncvlog -work work ../../../ScreenS.v 
+ncvhdl -v93 -work work ../../example_design/ScreenS_exdes.vhd
 
 echo "Compiling Test Bench Files"
 
 ncvhdl -v93 -work work    ../bmg_tb_pkg.vhd
 ncvhdl -v93 -work work    ../addr_gen.vhd
 ncvhdl -v93 -work work    ../bmg_stim_gen.vhd
-ncvhdl -v93 -work work    ../screenS_synth.vhd 
-ncvhdl -v93 -work work    ../screenS_tb.vhd
+ncvhdl -v93 -work work    ../ScreenS_synth.vhd 
+ncvhdl -v93 -work work    ../ScreenS_tb.vhd
 
 echo "Elaborating Design"
 ncvlog -work work $XILINX/verilog/src/glbl.v
-ncelab -access +rwc glbl work.screenS_tb
+ncelab -access +rwc glbl work.ScreenS_tb
 
 echo "Simulating Design"
-ncsim -gui -input @"simvision -input wave_ncsim.sv" work.screenS_tb
+ncsim -gui -input @"simvision -input wave_ncsim.sv" work.ScreenS_tb

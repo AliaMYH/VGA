@@ -45,23 +45,23 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc7a100tcsg324-2
-set projName screenS
-set design screenS
+set device xc7a100tcsg324-3
+set projName ScreenS
+set design ScreenS
 set projDir [file dirname [info script]]
 create_project $projName $projDir/results/$projName -part $device -force
 set_property design_mode RTL [current_fileset -srcset]
-set top_module screenS_exdes
-add_files -norecurse {../../example_design/screenS_exdes.vhd}
-add_files -norecurse {./screenS.ngc}
-import_files -fileset [get_filesets constrs_1] -force -norecurse {../../example_design/screenS_exdes.xdc}
-set_property top screenS_exdes [get_property srcset [current_run]]
+set top_module ScreenS_exdes
+add_files -norecurse {../../example_design/ScreenS_exdes.vhd}
+add_files -norecurse {./ScreenS.ngc}
+import_files -fileset [get_filesets constrs_1] -force -norecurse {../../example_design/ScreenS_exdes.xdc}
+set_property top ScreenS_exdes [get_property srcset [current_run]]
 synth_design
 opt_design 
 place_design 
 route_design 
-write_sdf -rename_top_module screenS_exdes -file routed.sdf 
-write_verilog -nolib -mode timesim -sdf_anno false -rename_top_module screenS_exdes routed.v
+write_sdf -rename_top_module ScreenS_exdes -file routed.sdf 
+write_verilog -nolib -mode timesim -sdf_anno false -rename_top_module ScreenS_exdes routed.v
 report_timing -nworst 30 -path_type full -file routed.twr
 report_drc -file report.drc
 write_bitstream -bitgen_options {-g UnconstrainedPins:Allow}

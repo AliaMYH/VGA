@@ -61,7 +61,7 @@
 --
 --------------------------------------------------------------------------------
 --
--- Filename: screenS_prod.vhd
+-- Filename: ScreenS_prod.vhd
 --
 -- Description:
 --   This is the top-level BMG wrapper (over BMG core).
@@ -87,7 +87,7 @@
 --    C_ALGORITHM                 :  1 
 --    C_PRIM_TYPE                 :  1 
 --    C_LOAD_INIT_FILE            :  1 
---    C_INIT_FILE_NAME            :  screenS.mif 
+--    C_INIT_FILE_NAME            :  ScreenS.mif 
 --    C_USE_DEFAULT_DATA          :  0 
 --    C_DEFAULT_DATA              :  0 
 --    C_RST_TYPE                  :  SYNC 
@@ -149,7 +149,7 @@ USE UNISIM.VCOMPONENTS.ALL;
 --------------------------------------------------------------------------------
 -- Entity Declaration
 --------------------------------------------------------------------------------
-ENTITY screenS_prod IS
+ENTITY ScreenS_prod IS
   PORT (
     --Port A
     CLKA       : IN STD_LOGIC;
@@ -224,12 +224,12 @@ ENTITY screenS_prod IS
 
   );
 
-END screenS_prod;
+END ScreenS_prod;
 
 
-ARCHITECTURE xilinx OF screenS_prod IS
+ARCHITECTURE xilinx OF ScreenS_prod IS
 
-  COMPONENT screenS_exdes IS
+  COMPONENT ScreenS_exdes IS
   PORT (
       --Port A
     ADDRA          : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -246,7 +246,7 @@ ARCHITECTURE xilinx OF screenS_prod IS
 
 BEGIN
 
-  bmg0 : screenS_exdes
+  bmg0 : ScreenS_exdes
     PORT MAP (
       --Port A
       ADDRA      => ADDRA,

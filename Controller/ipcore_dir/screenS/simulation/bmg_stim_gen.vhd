@@ -287,7 +287,7 @@ impure FUNCTION init_memory( C_USE_DEFAULT_DATA : INTEGER;
 
 constant c_init : mem_type := init_memory(0,
                                           1,
-										  "screenS.mif",
+										  "ScreenS.mif",
                                            DEFAULT_DATA,
                                           320,
                                           60);

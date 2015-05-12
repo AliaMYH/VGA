@@ -2,13 +2,13 @@
 Release 14.2 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr
 testBigMod.pcf -ucf vgaTest.ucf
 
 Design file:              testBigMod.ncd
 Physical constraint file: testBigMod.pcf
-Device,package,speed:     xc7a100t,csg324,C,-2 (ADVANCED 1.04 2012-07-09)
+Device,package,speed:     xc7a100t,csg324,C,-3 (ADVANCED 1.04 2012-07-09)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -30,18 +30,33 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Analysis completed Sun May 10 21:05:24 2015 
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst         |    3.693(R)|      SLOW  |   -2.012(R)|      FAST  |clk1              |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.436|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue May 12 11:16:18 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 612 MB
+Peak Memory Usage: 615 MB
 
 
 

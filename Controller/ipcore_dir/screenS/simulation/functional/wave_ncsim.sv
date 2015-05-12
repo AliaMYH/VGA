@@ -11,9 +11,9 @@
 window new WaveWindow  -name  "Waves for BMG Example Design"
 waveform  using  "Waves for BMG Example Design"
 
-      waveform add -signals /screenS_tb/status
-      waveform add -signals /screenS_tb/screenS_synth_inst/bmg_port/CLKA
-      waveform add -signals /screenS_tb/screenS_synth_inst/bmg_port/ADDRA
-      waveform add -signals /screenS_tb/screenS_synth_inst/bmg_port/DOUTA
+      waveform add -signals /ScreenS_tb/status
+      waveform add -signals /ScreenS_tb/ScreenS_synth_inst/bmg_port/CLKA
+      waveform add -signals /ScreenS_tb/ScreenS_synth_inst/bmg_port/ADDRA
+      waveform add -signals /ScreenS_tb/ScreenS_synth_inst/bmg_port/DOUTA
 
 console submit -using simulator -wait no "run"

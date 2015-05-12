@@ -61,15 +61,15 @@
 // (in parentheses) to your own signal names.
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
-screenS your_instance_name (
+ScreenS your_instance_name (
   .clka(clka), // input clka
   .addra(addra), // input [5 : 0] addra
   .douta(douta) // output [319 : 0] douta
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 
-// You must compile the wrapper file screenS.v when simulating
-// the core, screenS. When compiling the wrapper file, be sure to
+// You must compile the wrapper file ScreenS.v when simulating
+// the core, ScreenS. When compiling the wrapper file, be sure to
 // reference the XilinxCoreLib Verilog simulation library. For detailed
 // instructions, please refer to the "CORE Generator Help".
 

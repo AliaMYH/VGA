@@ -45,7 +45,7 @@
 :: PART OF THIS FILE AT ALL TIMES.
 ::--------------------------------------------------------------------------------
 
-cp ..\..\..\screenS.mif .
+cp ..\..\..\ScreenS.mif .
 
 
 vlogcomp -work work ..\..\implement\results\routed.v
@@ -55,9 +55,9 @@ echo "Compiling Test Bench Files"
 vhpcomp -work work    ..\bmg_tb_pkg.vhd
 vhpcomp -work work    ..\addr_gen.vhd
 vhpcomp -work work    ..\bmg_stim_gen.vhd
-vhpcomp -work work    ..\screenS_synth.vhd 
-vhpcomp -work work    ..\screenS_tb.vhd
+vhpcomp -work work    ..\ScreenS_synth.vhd 
+vhpcomp -work work    ..\ScreenS_tb.vhd
 
-    fuse -L simprims_ver work.screenS_tb work.glbl -o screenS_tb.exe
+    fuse -L simprims_ver work.ScreenS_tb work.glbl -o ScreenS_tb.exe
 
-.\screenS_tb.exe -sdftyp /screenS_tb/screenS_synth_inst/bmg_port=..\..\implement\results\routed.sdf -gui -tclbatch simcmds.tcl
+.\ScreenS_tb.exe -sdftyp /ScreenS_tb/ScreenS_synth_inst/bmg_port=..\..\implement\results\routed.sdf -gui -tclbatch simcmds.tcl

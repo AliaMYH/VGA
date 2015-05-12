@@ -51,7 +51,7 @@
 -- PART OF THIS FILE AT ALL TIMES.
 
 --------------------------------------------------------------------------------
--- Filename: screenS_tb.vhd
+-- Filename: ScreenS_tb.vhd
 -- Description:
 --  Testbench Top
 --------------------------------------------------------------------------------
@@ -72,11 +72,11 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 LIBRARY work;
 USE work.ALL;
 
-ENTITY screenS_tb IS
+ENTITY ScreenS_tb IS
 END ENTITY;
 
 
-ARCHITECTURE screenS_tb_ARCH OF screenS_tb IS
+ARCHITECTURE ScreenS_tb_ARCH OF ScreenS_tb IS
  SIGNAL  STATUS : STD_LOGIC_VECTOR(8 DOWNTO 0);
  SIGNAL  CLK :  STD_LOGIC := '1';
  SIGNAL  RESET : STD_LOGIC;
@@ -119,7 +119,7 @@ PROCESS BEGIN
   END IF;
 END PROCESS;	 
   
-  screenS_synth_inst:ENTITY work.screenS_synth
+  ScreenS_synth_inst:ENTITY work.ScreenS_synth
   GENERIC MAP (C_ROM_SYNTH => 0)
   PORT MAP(
            CLK_IN   => CLK,

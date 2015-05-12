@@ -51,5 +51,5 @@
 rm -rf results
 mkdir results
 cd results
-cp ../../../screenS.ngc .
+cp ../../../ScreenS.ngc .
 planAhead -mode batch -source ../planAhead_ise.tcl
