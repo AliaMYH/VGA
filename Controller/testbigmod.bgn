@@ -3,10 +3,10 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '7a100t.nph' in environment
 C:\Xilinx\14.2\ISE_DS\ISE\.
    "testBigMod" is an NCD, version 3.2, device xc7a100t, package csg324, speed
--2
+-3
 Opened constraints file testBigMod.pcf.
 
-Sun May 10 21:05:36 2015
+Tue May 12 09:39:15 2015
 
 C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:3 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g InitPin:Pullup -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g Disable_JTAG:No -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:Disable -g ConfigFallback:Disable -g BPI_page_size:1 -g BPI_sync_mode:Disable -g SPI_32bit_addr:No -g SPI_buswidth:1 -g SPI_Fall_Edge:No -g OverTempPowerDown:Disable -g USR_ACCESS:None -g JTAG_XADC:Enable -g DCIUpdateMode:AsRequired -g StartUpClk:JtagClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g Match_cycle:Auto -g Security:None -g ICAP_select:Auto -g DonePipe:Yes -g Encrypt:No testBigMod.ncd 
 
@@ -150,17 +150,7 @@ There were 0 CONFIG constraint(s) processed from testBigMod.pcf.
 
 
 Running DRC.
-ERROR:PhysDesignRules:368 - The signal <gs_OBUF> is incomplete. The signal is
-   not driven by any source pin in the design.
-ERROR:PhysDesignRules:368 - The signal <rs_OBUF> is incomplete. The signal is
-   not driven by any source pin in the design.
-ERROR:PhysDesignRules:368 - The signal <bs<0>_OBUF> is incomplete. The signal is
-   not driven by any source pin in the design.
-ERROR:PhysDesignRules:368 - The signal <bs<1>_OBUF> is incomplete. The signal is
-   not driven by any source pin in the design.
-ERROR:PhysDesignRules:10 - The network <gs_OBUF> is completely unrouted.
-ERROR:PhysDesignRules:10 - The network <rs_OBUF> is completely unrouted.
-ERROR:PhysDesignRules:10 - The network <bs<0>_OBUF> is completely unrouted.
-ERROR:PhysDesignRules:10 - The network <bs<1>_OBUF> is completely unrouted.
-ERROR:Bitgen:25 - DRC detected 8 errors and 0 warnings.  Please see the
-   previously displayed individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.
+Creating bit map...
+Saving bit stream in "testbigmod.bit".
+Bitstream generation is complete.

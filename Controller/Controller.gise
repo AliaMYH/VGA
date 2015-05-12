@@ -308,8 +308,8 @@
       <outfile xil_pn:name="testBigMod_pad.txt"/>
       <outfile xil_pn:name="testBigMod_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1431281139" xil_pn:in_ck="-7909765254470702059" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="-7544416716831264894" xil_pn:start_ts="1431281126">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1431412788" xil_pn:in_ck="-7909765254470702059" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="-7544416716831264894" xil_pn:start_ts="1431412745">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="testBigMod.ut"/>

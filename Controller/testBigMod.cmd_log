@@ -85,3 +85,4 @@ map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
 bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
