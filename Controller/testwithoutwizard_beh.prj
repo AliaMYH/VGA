@@ -1,4 +1,3 @@
-verilog work "ipcore_dir/Tiles_synth.v"
 verilog work "ipcore_dir/Tiles.v"
 verilog work "ipcore_dir/ScreenS.v"
 verilog work "VController.v"

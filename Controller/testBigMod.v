@@ -77,7 +77,7 @@ bright
     );
 	 
 ColorSelector col(
-clkdiv,
+clk,
 hcount,
 vcount,
 tselect,

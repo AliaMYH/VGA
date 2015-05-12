@@ -30,12 +30,19 @@ input clk1,
     );
 
 wire [511:0] line;
+wire [511:0] tst [15:0];
+assign tst [0] = 511'h07070707070707070700000000000007070000000000000707000000000000070700000000000007070000000000000707000000000000070707070707070707;
+assign tst [1] = 511'h38383838383838383800000000000038380000000000003838000000000000383800000000000038380000000000003838000000000000383838383838383838;;
+
+
+
 //16 tiles therefore we need four selection bits 
-Tiles tts(
-  .clka(clk1), // input clka
-  .addra(tselect), // input [3 : 0] addra
-  .douta(line) // output [511 : 0] douta
-);
+//Tiles tts(
+//  .clka(clk1), // input clka
+//  .addra(tselect), // input [3 : 0] addrad
+//  .douta(line) // output [511 : 0] douta
+//);
+assign line = tst [tselect];
 
 parameter [9:0] hleft = 10'd144;
 //parameter hpixels = 10'd640;

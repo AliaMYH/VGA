@@ -1,7 +1,7 @@
 Release 14.2 par P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-INGY2D28::  Tue May 12 13:26:32 2015
+INGY2D28::  Tue May 12 15:32:04 2015
 
 par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd
 testBigMod.pcf 
@@ -32,11 +32,11 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        257 out of  63,400    1%
-    Number used as logic:                      256 out of  63,400    1%
-      Number using O6 output only:             230
-      Number using O5 output only:               8
-      Number using O5 and O6:                   18
+  Number of Slice LUTs:                        103 out of  63,400    1%
+    Number used as logic:                      102 out of  63,400    1%
+      Number using O6 output only:              87
+      Number using O5 output only:               9
+      Number using O5 and O6:                    6
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  19,000    0%
     Number used exclusively as route-thrus:      1
@@ -45,11 +45,11 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   120 out of  15,850    1%
-  Number of LUT Flip Flop pairs used:          257
-    Number with an unused Flip Flop:           235 out of     257   91%
-    Number with an unused LUT:                   0 out of     257    0%
-    Number of fully used LUT-FF pairs:          22 out of     257    8%
+  Number of occupied Slices:                    51 out of  15,850    1%
+  Number of LUT Flip Flop pairs used:          103
+    Number with an unused Flip Flop:            81 out of     103   78%
+    Number with an unused LUT:                   0 out of     103    0%
+    Number of fully used LUT-FF pairs:          22 out of     103   21%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,800    0%
 
@@ -66,11 +66,11 @@ IO Utilization:
     Number of LOCed IOBs:                       16 out of      16  100%
 
 Specific Feature Utilization:
-  Number of RAMB36E1/FIFO36E1s:                  9 out of     135    6%
-    Number using RAMB36E1 only:                  9
+  Number of RAMB36E1/FIFO36E1s:                  2 out of     135    1%
+    Number using RAMB36E1 only:                  2
     Number using FIFO36E1 only:                  0
-  Number of RAMB18E1/FIFO18E1s:                  2 out of     270    1%
-    Number using RAMB18E1 only:                  2
+  Number of RAMB18E1/FIFO18E1s:                  1 out of     270    1%
+    Number using RAMB18E1 only:                  1
     Number using FIFO18E1 only:                  0
   Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
     Number used as BUFGs:                        3
@@ -105,33 +105,33 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 13 secs 
-Finished initial Timing Analysis.  REAL time: 13 secs 
+Starting initial Timing Analysis.  REAL time: 12 secs 
+Finished initial Timing Analysis.  REAL time: 12 secs 
 
 Starting Router
 
 
-Phase  1  : 3373 unrouted;      REAL time: 15 secs 
+Phase  1  : 1069 unrouted;      REAL time: 13 secs 
 
-Phase  2  : 1758 unrouted;      REAL time: 15 secs 
+Phase  2  : 624 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 634 unrouted;      REAL time: 16 secs 
+Phase  3  : 176 unrouted;      REAL time: 14 secs 
 
-Phase  4  : 711 unrouted; (Par is working to improve performance)     REAL time: 22 secs 
+Phase  4  : 176 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
 Updating file: testBigMod.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 41 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
-Total REAL time to Router completion: 46 secs 
-Total CPU time to Router completion: 45 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion: 18 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -151,11 +151,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net hi/ | SETUP       |         N/A|    12.118ns|     N/A|           0
-  clkdiv_BUFG                               | HOLD        |     0.313ns|            |       0|           0
+  Autotimespec constraint for clock net hi/ | SETUP       |         N/A|     3.176ns|     N/A|           0
+  clkdiv_BUFG                               | HOLD        |     0.218ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.222ns|     N/A|           0
-  1                                         | HOLD        |     0.264ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.371ns|     N/A|           0
+  1                                         | HOLD        |     0.202ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -171,10 +171,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 47 secs 
-Total CPU time to PAR completion: 46 secs 
+Total REAL time to PAR completion: 20 secs 
+Total CPU time to PAR completion: 19 secs 
 
-Peak Memory Usage:  677 MB
+Peak Memory Usage:  659 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

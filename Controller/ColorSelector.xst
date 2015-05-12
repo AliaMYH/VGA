@@ -1,10 +1,7 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn ColorSelector.prj
--ofn ColorSelector
--ofmt NGC
--p xc6slx16-2-csg324
+set -tmpdir "Y:/Desktop/github/DigitalProject2/VGA/Controller/xst/projnav.tmp"
+set -xsthdpdir "Y:/Desktop/github/DigitalProject2/VGA/Controller/xst"
+run -compileonly yes
+-p xc7a100t-3-csg324
 -top ColorSelector
 -opt_mode Speed
 -opt_level 1
@@ -51,3 +48,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn ColorSelector.prj

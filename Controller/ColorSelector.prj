@@ -1,3 +1,2 @@
-verilog work "ipcore_dir/testTileset.v"
-verilog work "ipcore_dir/testScreen_synth.v"
 verilog work "ColorSelector.v"
+verilog work "ipcore_dir/cccc/example_design/cccc_exdes.v"
