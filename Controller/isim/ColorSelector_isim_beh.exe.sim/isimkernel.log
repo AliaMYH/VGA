@@ -1,0 +1,28 @@
+Command line:
+   ColorSelector_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49265
+
+Tue May 12 13:36:58 2015
+
+
+ Elaboration Time: 0.062401 sec
+
+ Current Memory Usage: 518.631 Meg
+
+ Total Signals          : 167
+ Total Nets             : 5974
+ Total Signal Drivers   : 72
+ Total Blocks           : 19
+ Total Primitive Blocks : 15
+ Total Processes        : 84
+ Total Traceable Variables  : 336
+ Total Scalar Nets and Variables : 60885
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 518.631 Meg
+
+Tue May 12 13:37:01 2015
+

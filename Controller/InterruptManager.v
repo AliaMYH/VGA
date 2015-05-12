@@ -46,7 +46,7 @@ wire [319:0] line;
 
 //16 tiles therefore we need four selection bits 
 ScreenS screen (
-  .clka(clk), // input clka
+  .clka(~clk), // input clka
   .addra(address), // input [5 : 0] addra
   .douta(line) // output [319 : 0] douta
 );

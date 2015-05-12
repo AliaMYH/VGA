@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ColorSelector(
-input clk,
+input clk1,
     input [9:0] hcount,
     input [9:0] vcount,
     input [3:0] tselect,
@@ -31,8 +31,8 @@ input clk,
 
 wire [511:0] line;
 //16 tiles therefore we need four selection bits 
-TilesS tts(
-  .clka(clk), // input clka
+Tiles tts(
+  .clka(clk1), // input clka
   .addra(tselect), // input [3 : 0] addra
   .douta(line) // output [511 : 0] douta
 );
@@ -44,7 +44,7 @@ parameter [9:0] vtop = 10'd31;
 //parameter vpixels = 10'd480;
 
 wire [31:0] add;
-assign add = (bright) ? ((((vcount-vtop-1'b1)& 10'd7)<<10'd6) + (((hcount - hleft-1'b1)&10'd7)<<10'd3)- 32'd8): 10'd0;
+assign add = (bright) ? ((((vcount-vtop-1'b1)& 10'd7)<<10'd6) + (((hcount - hleft-1'b1)&10'd7)<<10'd3)): 10'd0;
 
 assign	R[0] = line[add];
 assign	R[1] = line[add+1];

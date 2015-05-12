@@ -44,7 +44,7 @@ parameter vbackporch = 10'd31;
 parameter vfrontporch = 10'd511;
 parameter vpulsewidth = 10'd2;
 
-assign bright = ( hcount-1'b1 <= hfrontporch && hcount >hbackporch && vcount <=vfrontporch && vcount >vbackporch ) ? 1'b1:1'b0;
+assign bright = ( hcount < hfrontporch && hcount >hbackporch && vcount <=vfrontporch && vcount >vbackporch ) ? 1'b1:1'b0;
 
 always @ (posedge clk or posedge rst)
 begin 

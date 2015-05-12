@@ -69,7 +69,7 @@ bright
     );
 
 InterruptManager inter(
-clkdiv,
+~clkdiv,
 hcount,
 vcount,
 tselect,
