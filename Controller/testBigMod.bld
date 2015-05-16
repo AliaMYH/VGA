@@ -7,7 +7,7 @@ xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd
 
 Reading NGO file
 "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.ngc" ...
-Loading design module "ipcore_dir/ScreenS.ngc"...
+Loading design module "ipcore_dir/Screeen.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -29,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 210660 kilobytes
+Total memory usage is 208868 kilobytes
 
 Writing NGD file "testBigMod.ngd" ...
 Total REAL time to NGDBUILD completion:  6 sec
-Total CPU time to NGDBUILD completion:   6 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "testBigMod.bld"...

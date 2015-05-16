@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="ScreenS">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2015-5-12T7:27:19</timestamp>
+    <timestamp>2015-5-13T12:44:11</timestamp>
     <pin polarity="Input" x="0" y="80" name="addra[5:0]" />
     <pin polarity="Input" x="0" y="272" name="clka" />
     <pin polarity="Output" x="576" y="80" name="douta[319:0]" />

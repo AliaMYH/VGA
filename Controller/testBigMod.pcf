@@ -1,23 +1,24 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Tue May 12 15:32:00 2015
+// Written by: Map P.28xd on Wed May 13 19:18:24 2015
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "r<2>" LOCATE = SITE "C5" LEVEL 1;
-COMP "g<0>" LOCATE = SITE "C6" LEVEL 1;
-COMP "g<1>" LOCATE = SITE "A5" LEVEL 1;
+COMP "r<2>" LOCATE = SITE "B4" LEVEL 1;
+COMP "g<0>" LOCATE = SITE "A5" LEVEL 1;
+COMP "g<1>" LOCATE = SITE "B6" LEVEL 1;
 COMP "clk" LOCATE = SITE "E3" LEVEL 1;
-COMP "g<2>" LOCATE = SITE "B6" LEVEL 1;
-COMP "gs" LOCATE = SITE "A6" LEVEL 1;
-COMP "rs" LOCATE = SITE "A4" LEVEL 1;
+COMP "g<2>" LOCATE = SITE "A6" LEVEL 1;
+COMP "gs" LOCATE = SITE "C6" LEVEL 1;
+COMP "rs" LOCATE = SITE "A3" LEVEL 1;
 COMP "hsync" LOCATE = SITE "B11" LEVEL 1;
-COMP "bs<0>" LOCATE = SITE "D7" LEVEL 1;
-COMP "bs<1>" LOCATE = SITE "D8" LEVEL 1;
-COMP "b<0>" LOCATE = SITE "B7" LEVEL 1;
-COMP "b<1>" LOCATE = SITE "C7" LEVEL 1;
+COMP "bs<0>" LOCATE = SITE "B7" LEVEL 1;
+COMP "bs<1>" LOCATE = SITE "C7" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "D7" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "D8" LEVEL 1;
 COMP "vsync" LOCATE = SITE "B12" LEVEL 1;
 COMP "rst" LOCATE = SITE "U9" LEVEL 1;
-COMP "r<0>" LOCATE = SITE "A3" LEVEL 1;
-COMP "r<1>" LOCATE = SITE "B4" LEVEL 1;
+COMP "r<0>" LOCATE = SITE "A4" LEVEL 1;
+COMP "r<1>" LOCATE = SITE "C5" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "hi/clkdiv" BEL "hi/out" BEL "clk_BUFGP/BUFG";
 SCHEMATIC END;
 

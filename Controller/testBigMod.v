@@ -38,14 +38,14 @@ input clk,
 	 //assign rs = 0;
 	 //assign bs = 0;
 //wire clk0;
-wire clk1;
-cccc instance_name
-   (// Clock in ports
-    .CLK_IN1(clk),      // IN
-    // Clock out ports
-    .CLK_OUT1(clk1),     // OUT
-    // Status and control signals
-    .RESET(rst));  
+//wire clk1;
+//cccc instance_name
+//   (// Clock in ports
+//    .CLK_IN1(clk),      // IN
+//    // Clock out ports
+//    .CLK_OUT1(clk1),     // OUT
+//    // Status and control signals
+//    .RESET(rst));  
 
 wire [9:0] hcount;
 wire [9:0] vcount;
@@ -53,10 +53,10 @@ wire bright;
 wire [3:0] tselect;
 wire clkdiv;
 assign rs= 0;
-assign gs= 0;
+assign gs= 1'b1;
 assign bs = 2'b00;
 
-count2bit hi(clk1,rst, clkdiv);
+count2bit hi(clk,rst, clkdiv);
 
 VController cont(
 clkdiv,
@@ -69,7 +69,7 @@ bright
     );
 
 InterruptManager inter(
-~clkdiv,
+clkdiv,
 hcount,
 vcount,
 tselect,
@@ -77,7 +77,7 @@ bright
     );
 	 
 ColorSelector col(
-clk,
+clkdiv, 
 hcount,
 vcount,
 tselect,

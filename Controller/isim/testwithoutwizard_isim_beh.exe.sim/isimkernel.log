@@ -2,9 +2,27 @@ Command line:
    testwithoutwizard_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49291
+     -socket  49298
 
-Tue May 12 15:30:32 2015
+Wed May 13 12:08:14 2015
 
 
- Elaboration Time: 0.078 sec
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 518.64 Meg
+
+ Total Signals          : 209
+ Total Nets             : 12621
+ Total Signal Drivers   : 95
+ Total Blocks           : 24
+ Total Primitive Blocks : 18
+ Total Processes        : 112
+ Total Traceable Variables  : 352
+ Total Scalar Nets and Variables : 67372
+
+ Total Simulation Time: 1.13881 sec
+
+ Current Memory Usage: 518.64 Meg
+
+Wed May 13 12:10:00 2015
+

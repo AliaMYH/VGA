@@ -1,0 +1,7 @@
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/reg_sp.vhd"
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/reg_pc.vhd"
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/regbank_axy.vhd"
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/fsm_nmi.vhd"
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/fsm_execution_unit.vhd"
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/core.vhd"
+vhdl work "../cpu6502_true_cycle/trunk/rtl/vhdl/r6502_tc.vhd"

@@ -48,8 +48,10 @@ assign bright = ( hcount < hfrontporch && hcount >hbackporch && vcount <=vfrontp
 
 always @ (posedge clk or posedge rst)
 begin 
-	if(rst == 1'b1)
+	if(rst == 1'b1)begin
 		hcount<=0;
+		vcount<=0;
+		end
 	else if(hcount <hpixels -1)
 		hcount <= hcount +10'b1;
 		else begin
