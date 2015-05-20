@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-18T16:51:42</DateModified>
+  <DateModified>2015-05-19T11:08:47</DateModified>
   <ModuleName>cpu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>Y:/Desktop/github/DigitalProject2/VGA/CPUTestVerilog/iseconfig/cpu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Y:/Desktop/github/DigitalProject2/VGA/CPUTestVerilog</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>Y:/Desktop/github/DigitalProject2/VGA/CPUTestVerilog\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-18T16:51:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
