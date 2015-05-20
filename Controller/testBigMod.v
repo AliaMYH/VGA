@@ -21,6 +21,10 @@
 module testBigMod(
 input clk,
     input rst,
+	  input upb,
+	 input downb,
+	 input leftb,
+	 input rightb,
     output [2:0] r,
     output [2:0] g,
     output [1:0] b,
@@ -52,9 +56,9 @@ wire [9:0] vcount;
 wire bright;
 wire [3:0] tselect;
 wire clkdiv;
-assign rs= 0;
-assign gs= 1'b1;
-assign bs = 2'b00;
+assign rs= r[0];
+assign gs= g[0];
+assign bs = {b[0],b[0]};
 
 count2bit hi(clk,rst, clkdiv);
 
@@ -68,12 +72,19 @@ vsync,
 bright
     );
 
+wire [3:0] direction;
+
 InterruptManager inter(
 clkdiv,
 hcount,
 vcount,
 tselect,
-bright
+bright,
+upb,
+downb,
+leftb,
+rightb,
+direction
     );
 	 
 ColorSelector col(

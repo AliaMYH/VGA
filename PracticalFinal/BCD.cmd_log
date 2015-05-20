@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "Y:/Documents/VGA/PracticalFinal/BCD.xst" -ofn "Y:/Documents/VGA/PracticalFinal/BCD.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/PracticalFinal/BCD.xst" -ofn "Y:/Documents/VGA/PracticalFinal/BCD.syr" 

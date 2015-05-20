@@ -23,7 +23,12 @@ input clk,
 	 input [9:0] hcount,
     input [9:0] vcount,
     output [3:0] tselect,
-	 input bright
+	 input bright,
+	 input upb,
+	 input downb,
+	 input leftb,
+	 input rightb,
+	 output [3:0] direction
     );
 
 parameter hleft = 10'd144;
@@ -41,7 +46,7 @@ wire [12:0] address;
 //assign truehc = (bright)? ((hcount-hleft-1'b1)>>3):10'b0;
 //assign hselect = (bright)? (truehc <<2):10'b0;
 
-assign address = (bright) ? (((vcount -13'd32)>>13'd3)*13'd80) + ((hcount-13'd145)>>13'd3):13'b0;
+assign address = (bright) ? (((vcount -13'd32)>>13'd4)*13'd40) + ((hcount-13'd145)>>13'd4):13'b0;
 
 wire [3:0] line;
 

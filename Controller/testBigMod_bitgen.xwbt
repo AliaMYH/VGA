@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=Y:\Desktop\github\DigitalProject2\VGA\Controller\testBigMod.ncd
-OUTFILE=Y:\Desktop\github\DigitalProject2\VGA\Controller\testBigMod.bit
+INFILE=Y:\Documents\VGA\Controller\testBigMod.ncd
+OUTFILE=Y:\Documents\VGA\Controller\testBigMod.bit
 FAMILY=Artix7
 PART=xc7a100t-3csg324
-WORKINGDIR=Y:\Desktop\github\DigitalProject2\VGA\Controller
+WORKINGDIR=Y:\Documents\VGA\Controller
 LICENSE=WebPack
-USER_INFO=__0_0_0
+USER_INFO=210684813_0_0_436

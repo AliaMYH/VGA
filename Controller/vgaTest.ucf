@@ -27,3 +27,8 @@ NET "g<2>"		LOC = "A6"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L3P
 NET "hsync"			LOC = "B11"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L4P_T0_15,						Sch name = VGA_HS
 NET "vsync"			LOC = "B12"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L3N_T0_DQS_AD1N_15,				Sch name = VGA_BVS
 
+## Pmod Header JB
+NET "upb"			LOC = "G14"	| IOSTANDARD = "LVCMOS33";	#btn0	#Bank = 15, Pin name = IO_L15N_T2_DQS_ADV_B_15,				Sch name = JB1
+NET "downb"			LOC = "P15"	| IOSTANDARD = "LVCMOS33";#bnt1		#Bank = 14, Pin name = IO_L13P_T2_MRCC_14,					Sch name = JB2
+NET "leftb"			LOC = "V11"	| IOSTANDARD = "LVCMOS33";	#btn2	#Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,			Sch name = JB3
+NET "rightb"			LOC = "V15"	| IOSTANDARD = "LVCMOS33";	#btn3	#Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,				Sch name = JB4

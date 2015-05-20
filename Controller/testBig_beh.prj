@@ -1,4 +1,4 @@
-verilog work "ipcore_dir/ScreenS.v"
+verilog work "ipcore_dir/Screeen.v"
 verilog work "VController.v"
 verilog work "InterruptManager.v"
 verilog work "count2bit.v"
