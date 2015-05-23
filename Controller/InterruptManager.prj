@@ -1,3 +1,0 @@
-verilog work "ipcore_dir/testScreen.v"
-verilog work "ipcore_dir/testScreen_synth.v"
-verilog work "InterruptManager.v"

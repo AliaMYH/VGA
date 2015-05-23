@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/CPutest/R6502_TC.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/CPutest/R6502_TC.syr" 

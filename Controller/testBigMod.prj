@@ -1,7 +1,0 @@
-verilog work "ipcore_dir/Screeen.v"
-verilog work "VController.v"
-verilog work "InterruptManager.v"
-verilog work "count2bit.v"
-verilog work "ColorSelector.v"
-verilog work "testBigMod.v"
-verilog work "ipcore_dir/cccc/example_design/cccc_exdes.v"
