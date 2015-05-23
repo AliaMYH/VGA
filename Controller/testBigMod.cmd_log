@@ -1,0 +1,567 @@
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/Controller/testBigMod.xst" -ofn "Y:/Documents/Controller/testBigMod.syr" 
+vhdtdtfi -lang verilog -prj Controller -o I:/Controller/testBigMod.tfi -lib work I:/Controller//testBigMod.v -module testBigMod -template C:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "I:/Controller/testBigMod.xst" -ofn "I:/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-2 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.xst" -ofn "Y:/Desktop/github/DigitalProject2/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vgaTest.ucf -p xc7a100t-csg324-3 testBigMod.ngc testBigMod.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o testBigMod_map.ncd testBigMod.ngd testBigMod.pcf 
+par -w -intstyle ise -ol high -mt off testBigMod_map.ncd testBigMod.ncd testBigMod.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testBigMod.twx testBigMod.ncd -o testBigMod.twr testBigMod.pcf -ucf vgaTest.ucf 
+bitgen -intstyle ise -f testBigMod.ut testBigMod.ncd 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/Controller/testBigMod.xst" -ofn "Y:/Documents/VGA/Controller/testBigMod.syr" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Y:\Documents\VGA\buttontest\gg.ncd
+OUTFILE=Y:\Documents\VGA\buttontest\gg.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=Y:\Documents\VGA\buttontest
+LICENSE=WebPack
+USER_INFO=210684813_0_0_436

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Y:\Documents\VGA\Controller\testBigMod.ncd
+OUTFILE=Y:\Documents\VGA\Controller\testBigMod.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=Y:\Documents\VGA\Controller
+LICENSE=WebPack
+USER_INFO=210684813_0_0_436

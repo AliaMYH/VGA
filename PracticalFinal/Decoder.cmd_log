@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "Y:/Documents/VGA/PracticalFinal/Decoder.xst" -ofn "Y:/Documents/VGA/PracticalFinal/Decoder.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/PracticalFinal/Decoder.xst" -ofn "Y:/Documents/VGA/PracticalFinal/Decoder.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/PracticalFinal/Decoder.xst" -ofn "Y:/Documents/VGA/PracticalFinal/Decoder.syr" 
+xst -intstyle ise -ifn "Y:/Documents/VGA/PracticalFinal/Decoder.xst" -ofn "Y:/Documents/VGA/PracticalFinal/Decoder.syr" 

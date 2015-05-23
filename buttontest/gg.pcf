@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Tue May 19 18:56:34 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sel<0>" LOCATE = SITE "T8" LEVEL 1;
+COMP "sel<1>" LOCATE = SITE "V9" LEVEL 1;
+COMP "a" LOCATE = SITE "G14" LEVEL 1;
+COMP "sel<2>" LOCATE = SITE "R8" LEVEL 1;
+COMP "b" LOCATE = SITE "P15" LEVEL 1;
+COMP "c" LOCATE = SITE "V11" LEVEL 1;
+COMP "sel<3>" LOCATE = SITE "T6" LEVEL 1;
+COMP "d" LOCATE = SITE "V15" LEVEL 1;
+SCHEMATIC END;
+
