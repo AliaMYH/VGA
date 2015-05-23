@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Y:/Documents/VGA/Controller/testBig_isim_beh.exe" -prj "Y:/Documents/VGA/Controller/testBig_beh.prj" "work.testBig" "work.glbl" 

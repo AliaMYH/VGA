@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=Y:\Documents\VGA\PracticalFinal\TopModule.ncd
-OUTFILE=Y:\Documents\VGA\PracticalFinal\TopModule.bit
-FAMILY=Artix7
-PART=xc7a100t-2csg324
-WORKINGDIR=Y:\Documents\VGA\PracticalFinal
-LICENSE=WebPack
-USER_INFO=210684813_0_0_436
